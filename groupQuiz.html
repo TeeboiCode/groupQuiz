@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="./assests/download.png" alt="App Logo" />
+        </a>
+        <span>Group Quiz</span>
+      </div>
+      <a href="scoreboard.html" class="scoreboard-btn">🏆 Scoreboard</a>
+    </nav>
+
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Pick a Question</h1>
+        <div class="question-tracker">
+          Current Question:
+          <strong id="current-question-number">None</strong>
+        </div>
+      </div>
+
+      <!-- Question Grid -->
+      <div class="question-grid" id="question-grid"></div>
+
+      <!-- Question Box -->
+      <div class="question-box" id="question-box" style="display: none">
+        <h2 id="question-text"></h2>
+        <p class="countdown-label">
+          Time Remaining: <span id="countdown">60</span> seconds
+        </p>
+        <button id="pass-to-bonus">⏭ Pass to Bonus</button>
+        <button id="back-to-grid" class="back-btn">🔙 Back to Questions</button>
+      </div>
+
+      <!-- Preloader Countdown -->
+      <div class="preloader-overlay" id="preloader" style="display: none">
+        <div class="preloader-content">
+          <p id="preloader-count">3</p>
+          <p>Get Ready...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      const grid = document.getElementById("question-grid");
+      const questionBox = document.getElementById("question-box");
+      const questionText = document.getElementById("question-text");
+      const countdown = document.getElementById("countdown");
+      const questionNumberEl = document.getElementById(
+        "current-question-number"
+      );
+      const passBtn = document.getElementById("pass-to-bonus");
+      const backBtn = document.getElementById("back-to-grid");
+
+      let usedNumbers = new Set();
+      let timer;
+      let questionData = [];
+
+      fetch("/db.json")
+        .then((res) => res.json())
+        .then((data) => {
+          questionData = shuffleArray(data.questions);
+          renderGrid(questionData);
+        });
+
+      function shuffleArray(array) {
+        return array.sort(() => Math.random() - 0.5);
+      }
+
+      function renderGrid(questions) {
+        for (let i = 1; i <= 100; i++) {
+          const btn = document.createElement("button");
+          btn.className = "question-btn";
+          btn.textContent = i;
+          btn.dataset.index = i - 1;
+          btn.onclick = () => handleQuestionClick(btn);
+          grid.appendChild(btn);
+        }
+      }
+
+      function handleQuestionClick(btn) {
+        const index = btn.dataset.index;
+        if (usedNumbers.has(index)) return;
+
+        usedNumbers.add(index);
+        btn.disabled = true;
+
+        const question = questionData[index];
+        questionNumberEl.textContent = +index + 1;
+        questionText.textContent = question.question;
+
+        // Show the preloader before showing the question
+        showPreloader(() => {
+          grid.style.display = "none";
+          questionBox.style.display = "block";
+
+          startCountdown(180, () => {
+            passBtn.style.display = "inline-block";
+          });
+        });
+      }
+
+      function startCountdown(duration, callback) {
+        clearInterval(timer);
+        let time = duration;
+        countdown.textContent = time;
+        timer = setInterval(() => {
+          time--;
+          countdown.textContent = time;
+          if (time <= 0) {
+            clearInterval(timer);
+            if (callback) callback();
+          }
+        }, 1000);
+      }
+
+      function showPreloader(callback) {
+        const preloader = document.getElementById("preloader");
+        const preloaderCount = document.getElementById("preloader-count");
+        let count = 3;
+
+        preloader.style.display = "flex";
+        preloaderCount.textContent = count;
+
+        const interval = setInterval(() => {
+          count--;
+          if (count === 0) {
+            clearInterval(interval);
+            preloader.style.display = "none";
+            callback(); // Show question box
+          } else {
+            preloaderCount.textContent = count;
+          }
+        }, 1000);
+      }
+
+      function showWinnerAlert(groupName) {
+        Swal.fire({
+          title: `🎉 ${groupName} Wins!`,
+          text: `Congratulations! ${groupName} reached the winning score!`,
+          icon: "success",
+          timer: 180000, // 3 minutes
+          timerProgressBar: true,
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+          showConfirmButton: false,
+          background: "#fffaf0",
+          customClass: {
+            popup: "animated tada",
+          },
+          didOpen: () => {
+            const content = Swal.getHtmlContainer();
+            if (content) {
+              content.style.fontFamily = "'Comic Sans MS', 'Poppins', cursive";
+              content.style.fontSize = "1.3rem";
+              content.style.color = "#333";
+            }
+          },
+        });
+      }
+
+      passBtn.onclick = () => {
+        passBtn.style.display = "none";
+        startCountdown(20, () => {
+          alert("Bonus round over. Switch to next question.");
+          questionBox.style.display = "none";
+          grid.style.display = "grid";
+        });
+      };
+
+      backBtn.onclick = () => {
+        questionBox.style.display = "none";
+        grid.style.display = "grid";
+        passBtn.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

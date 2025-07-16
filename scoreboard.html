@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      /* Gamey SweetAlert Styles */
+      .swal2-popup.sweet-alert-popup {
+        border: 4px dashed var(--color-primary);
+        border-radius: 20px !important;
+        font-family: "Fredoka", sans-serif;
+        box-shadow: var(--box-shadow-card);
+      }
+
+      .sweet-alert-title {
+        font-size: 2rem;
+        color: var(--color-primary);
+        font-weight: 800;
+      }
+
+      .sweet-alert-content {
+        font-size: 1.3rem;
+        color: var(--color-blue-deep);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="./assests/download.png" alt="App Logo" />
+        <span>Group Quiz</span>
+      </div>
+      <a href="index.html" class="scoreboard-btn">🏠 Back to Game</a>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Manual Scoreboard</h1>
+      <label style="font-size: 1.1rem; font-weight: 500">
+        Winning Score:
+        <input
+          type="number"
+          id="winning-score"
+          value="30"
+          min="1"
+          style="
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--color-blue-border);
+            margin-left: 10px;
+          "
+        />
+      </label>
+
+      <!-- Big live score -->
+      <div class="big-score">
+        <span id="big-score-a">0</span>
+        <span class="versus">—</span>
+        <span id="big-score-b">0</span>
+      </div>
+    </div>
+
+    <!-- Score Section -->
+    <div
+      class="score-section"
+      style="
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+      "
+    >
+      <!-- Group A -->
+      <div class="question-box" style="max-width: 300px">
+        <h2>Group A</h2>
+        <p>Score: <strong id="score-a">0</strong></p>
+        <p>Bonus: <strong id="bonus-a">0</strong></p>
+        <div class="controls" style="margin-top: 10px">
+          <button class="question-btn" onclick="addScore('a')">+3 Score</button>
+          <button class="question-btn" onclick="addBonus('a')">+1 Bonus</button>
+        </div>
+      </div>
+
+      <!-- Group B -->
+      <div class="question-box" style="max-width: 300px">
+        <h2>Group B</h2>
+        <p>Score: <strong id="score-b">0</strong></p>
+        <p>Bonus: <strong id="bonus-b">0</strong></p>
+        <div class="controls" style="margin-top: 10px">
+          <button class="question-btn" onclick="addScore('b')">+3 Score</button>
+          <button class="question-btn" onclick="addBonus('b')">+1 Bonus</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Winner Message -->
+    <div
+      id="winner"
+      style="
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 30px;
+        color: var(--color-success-text);
+        font-weight: bold;
+      "
+    ></div>
+
+    <!-- 🔁 Reset Button -->
+    <div style="text-align: center; margin: 20px 0 74px 0">
+      <button onclick="resetAllScores()" class="back-btn">
+        🔁 Reset Scores
+      </button>
+    </div>
+
+    <!-- Script -->
+    <script>
+      let score = { a: 0, b: 0 };
+      let bonus = { a: 0, b: 0 };
+      let gameOver = false;
+
+      function updateDisplay() {
+        const totalA = score.a + bonus.a;
+        const totalB = score.b + bonus.b;
+
+        document.getElementById("score-a").textContent = score.a;
+        document.getElementById("bonus-a").textContent = bonus.a;
+        document.getElementById("score-b").textContent = score.b;
+        document.getElementById("bonus-b").textContent = bonus.b;
+        document.getElementById("big-score-a").textContent = totalA;
+        document.getElementById("big-score-b").textContent = totalB;
+
+        const winScore = parseInt(
+          document.getElementById("winning-score").value
+        );
+        const winnerEl = document.getElementById("winner");
+
+        // Check for winner only if game not over
+        if (!gameOver) {
+          if (totalA >= winScore && totalA > totalB) {
+            announceWinner("Group A");
+            gameOver = true;
+          } else if (totalB >= winScore && totalB > totalA) {
+            announceWinner("Group B");
+            gameOver = true;
+          }
+        }
+      }
+
+      function addScore(group) {
+        if (gameOver) return;
+        score[group] += 3;
+        updateDisplay();
+      }
+
+      function addBonus(group) {
+        if (gameOver) return;
+        bonus[group] += 1;
+        updateDisplay();
+      }
+
+      function resetAllScores() {
+        score = { a: 0, b: 0 };
+        bonus = { a: 0, b: 0 };
+        gameOver = false;
+        document.getElementById("winner").textContent = "";
+        updateDisplay();
+      }
+
+      function announceWinner(groupName) {
+        Swal.fire({
+          title: `🎉 ${groupName} Wins!`,
+          text: "Congratulations! 🎈",
+          icon: "success",
+          background: "#f1f8ff",
+          color: "#0a3967",
+          showConfirmButton: false,
+          timer: 3000,
+          customClass: {
+            popup: "sweet-alert-popup",
+            title: "sweet-alert-title",
+            content: "sweet-alert-content",
+          },
+        });
+
+        // Still update the page text (fallback/visible anyway)
+        document.getElementById("winner").textContent = `🎉 ${groupName} Wins!`;
+      }
+
+      // Reset and update when winning score changes
+      document
+        .getElementById("winning-score")
+        .addEventListener("input", resetAllScores);
+    </script>
+  </body>
+</html>

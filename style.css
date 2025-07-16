@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+
+:root {
+  --color-primary: #0a69ed;
+  --color-primary-hover: #0851bc;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-black-overlay: #000000b6;
+
+  --color-gray-dark: #333;
+  --color-gray-mid: #bfbfbf;
+  --color-gray-light: #e0e0e0;
+  --color-gray-hover: #f9f9f9;
+  --color-gray-table-header: #f5f5f5;
+
+  --color-blue-soft: #cce6ff;
+  --color-blue-deep: #0a3967;
+  --color-blue-border: #c6d8f0;
+  --color-blue-verylight: #f1f8ff;
+
+  --color-success-bg: #d0ebd4;
+  --color-success-text: #176c27;
+
+  --color-error-bg: #f5d1d4;
+  --color-error-text: #7c2027;
+
+  --color-heading: #2c3e50;
+
+  --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --box-shadow-card: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: var(--color-blue-verylight);
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      #cce6ff 10%,
+      transparent 11%
+    ),
+    radial-gradient(circle at 80% 30%, #0a69ed1a 10%, transparent 11%),
+    radial-gradient(circle at 30% 70%, #0851bc1a 10%, transparent 11%),
+    radial-gradient(circle at 60% 90%, #0a69ed1a 10%, transparent 11%),
+    radial-gradient(circle at 90% 10%, #cce6ff 10%, transparent 11%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--color-gray-dark);
+  padding: 0;
+  margin: 0;
+}
+
+/* body {
+  font-family: "Fredoka", sans-serif;
+  background-color: var(--color-blue-verylight);
+  color: var(--color-gray-dark);
+  padding: 0;
+  margin: 0;
+} */
+
+/* .container {
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      #cce6ff 0%,
+      transparent 20%
+    ),
+    radial-gradient(circle at 80% 40%, #0a69ed33 0%, transparent 20%),
+    radial-gradient(circle at 50% 90%, #0851bc33 0%, transparent 25%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: pulseBackground 15s infinite ease-in-out;
+  position: relative;
+  z-index: 0;
+} */
+
+/* .container {
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      #cce6ff 10%,
+      transparent 11%
+    ),
+    radial-gradient(circle at 80% 30%, #0a69ed1a 10%, transparent 11%),
+    radial-gradient(circle at 30% 70%, #0851bc1a 10%, transparent 11%),
+    radial-gradient(circle at 60% 90%, #0a69ed1a 10%, transparent 11%),
+    radial-gradient(circle at 90% 10%, #cce6ff 10%, transparent 11%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+@keyframes pulseBackground {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 15px 30px;
+  box-shadow: var(--box-shadow-card);
+  color: var(--color-white);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.nav-logo span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #070737;
+}
+
+.scoreboard-btn {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.scoreboard-btn:hover {
+  background-color: var(--color-gray-light);
+}
+
+.header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--color-heading);
+}
+
+.question-tracker {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--color-primary);
+}
+
+/* Grid of questions */
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.question-btn {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-blue-border);
+  color: var(--color-black);
+  font-weight: bold;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--box-shadow-light);
+}
+
+.question-btn:hover {
+  background-color: var(--color-blue-soft);
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.question-btn:disabled {
+  background-color: var(--color-gray-light);
+  color: var(--color-gray-mid);
+  cursor: not-allowed;
+  border: 2px dashed var(--color-gray-mid);
+}
+
+/* Question Box */
+.question-box {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-blue-border);
+  border-radius: 16px;
+  box-shadow: var(--box-shadow-card);
+  padding: 40px;
+  max-width: 850px;
+  margin: 30px auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.question-box h2 {
+  font-size: 2rem;
+  color: var(--color-heading);
+  margin-bottom: 20px;
+}
+
+.countdown-label {
+  font-size: 1.3rem;
+  color: var(--color-blue-deep);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#countdown {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* Pass to Bonus Button */
+#pass-to-bonus {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s ease;
+}
+
+#pass-to-bonus:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.back-btn {
+  background-color: var(--color-gray-hover);
+  color: var(--color-blue-deep);
+  border: 2px solid var(--color-blue-border);
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--color-blue-soft);
+}
+
+/* Preloader Overlay */
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-black-overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+}
+
+.preloader-content p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.preloader-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-content p:first-child {
+  font-size: 4rem;
+}
+
+/* Gamey background effect */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 20%, #cce6ff 0%, transparent 20%),
+    radial-gradient(circle at 80% 30%, #0a69ed33 0%, transparent 20%),
+    radial-gradient(circle at 50% 80%, #0851bc33 0%, transparent 25%);
+  z-index: 0;
+  opacity: 0.3;
+  pointer-events: none;
+  animation: pulseBackground 10s infinite ease-in-out;
+}
+
+@keyframes pulseBackground {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.big-score {
+  font-size: 6rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--color-primary);
+  margin-top: 30px;
+  letter-spacing: 8px;
+  line-height: 1.2;
+}
+
+.big-score .versus {
+  margin: 0 40px;
+  font-size: 5.5rem;
+  color: var(--color-blue-deep);
+}
