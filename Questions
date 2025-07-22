@@ -1,0 +1,359 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for, and what is its primary role in web development?"
+    },
+    {
+      "id": 2,
+      "question": "Explain the difference between <div> and <span> tags."
+    },
+    {
+      "id": 3,
+      "question": "What is the function of the <head> and <body> tags in an HTML document?"
+    },
+    {
+      "id": 4,
+      "question": "Describe the use and importance of semantic HTML elements like <article>, <section>, and <nav>."
+    },
+    {
+      "id": 5,
+      "question": "Explain what the alt attribute does in an <img> tag."
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between absolute and relative links in HTML?"
+    },
+    {
+      "id": 7,
+      "question": "What is the purpose of the <!DOCTYPE html> declaration?"
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between an ordered list and an unordered list?"
+    },
+    {
+      "id": 9,
+      "question": "How do you create a hyperlink that opens in a new tab?"
+    },
+    {
+      "id": 10,
+      "question": "Explain the difference between id and class attributes."
+    },
+    {
+      "id": 11,
+      "question": "What does CSS stand for and what is its purpose?"
+    },
+    {
+      "id": 12,
+      "question": "Explain the difference between inline, internal, and external CSS."
+    },
+    { "id": 13, "question": "What is the box model in CSS?" },
+    {
+      "id": 14,
+      "question": "Explain the role of margin, border, padding, and content in the box model."
+    },
+    { "id": 15, "question": "How does the position property work in CSS?" },
+    {
+      "id": 16,
+      "question": "What’s the difference between relative, absolute, fixed, and sticky positioning?"
+    },
+    {
+      "id": 17,
+      "question": "Explain the difference between em, rem, %, and px units."
+    },
+    {
+      "id": 18,
+      "question": "How do you apply the same style to multiple HTML elements?"
+    },
+    {
+      "id": 19,
+      "question": "What’s the difference between visibility: hidden and display: none?"
+    },
+    { "id": 20, "question": "Explain how z-index works and when it’s useful." },
+    {
+      "id": 21,
+      "question": "How can you make a website responsive using CSS?"
+    },
+    {
+      "id": 22,
+      "question": "What is a media query, and how is it used in responsive design?"
+    },
+    { "id": 23, "question": "What are pseudo-classes in CSS? Give examples." },
+    {
+      "id": 24,
+      "question": "What is the difference between class and id selectors in CSS?"
+    },
+    { "id": 25, "question": "What is Flexbox and why is it used?" },
+    {
+      "id": 26,
+      "question": "What is JavaScript and how does it differ from HTML and CSS?"
+    },
+    { "id": 27, "question": "Explain how var, let, and const are different." },
+    {
+      "id": 28,
+      "question": "What is the difference between == and === in JavaScript?"
+    },
+    {
+      "id": 29,
+      "question": "What are data types in JavaScript? Name at least five."
+    },
+    {
+      "id": 30,
+      "question": "Explain what a function is and how you define one."
+    },
+    { "id": 31, "question": "What is the purpose of an if statement?" },
+    { "id": 32, "question": "Explain what a for loop is and give an example." },
+    {
+      "id": 33,
+      "question": "What is an array, and how do you access its elements?"
+    },
+    {
+      "id": 34,
+      "question": "What is an object in JavaScript, and how is it different from an array?"
+    },
+    { "id": 35, "question": "How does the addEventListener method work?" },
+    { "id": 36, "question": "What does document.getElementById() do?" },
+    {
+      "id": 37,
+      "question": "What is the DOM, and why is it important in web development?"
+    },
+    { "id": 38, "question": "What is the purpose of console.log()?" },
+    { "id": 39, "question": "What is hoisting in JavaScript?" },
+    {
+      "id": 40,
+      "question": "What is the difference between synchronous and asynchronous code?"
+    },
+    { "id": 41, "question": "What is a callback function?" },
+    {
+      "id": 42,
+      "question": "What is an event in JavaScript? Give 3 examples."
+    },
+    {
+      "id": 43,
+      "question": "How do you change the content of an HTML element using JavaScript?"
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between null and undefined?"
+    },
+    {
+      "id": 45,
+      "question": "What is the use of the return keyword in a function?"
+    },
+    {
+      "id": 46,
+      "question": "What is a Boolean, and how is it used in conditionals?"
+    },
+    { "id": 47, "question": "What is a loop and why is it useful?" },
+    {
+      "id": 48,
+      "question": "What does the length property of an array tell you?"
+    },
+    { "id": 49, "question": "How do you create a new object in JavaScript?" },
+    {
+      "id": 50,
+      "question": "What are common methods used with arrays like push, pop, shift, unshift?"
+    },
+    {
+      "id": 51,
+      "question": "What is specificity in CSS, and how does it affect styling?"
+    },
+    {
+      "id": 52,
+      "question": "What is the difference between inline-block and block in CSS?"
+    },
+    {
+      "id": 53,
+      "question": "How do CSS transitions work, and what are they used for?"
+    },
+    {
+      "id": 54,
+      "question": "What is the difference between min-width, max-width, and width?"
+    },
+    {
+      "id": 55,
+      "question": "What are pseudo-elements in CSS? Give examples."
+    },
+    {
+      "id": 56,
+      "question": "Explain how media queries help create responsive designs."
+    },
+    {
+      "id": 57,
+      "question": "What is the difference between rem and em units in CSS?"
+    },
+    {
+      "id": 58,
+      "question": "What is a CSS variable and how do you define one?"
+    },
+    {
+      "id": 59,
+      "question": "How does the `!important` rule work in CSS?"
+    },
+    {
+      "id": 60,
+      "question": "What are common values for the `display` property?"
+    },
+    {
+      "id": 61,
+      "question": "How does the `position: sticky` value work?"
+    },
+    {
+      "id": 62,
+      "question": "What is the difference between `visibility: hidden` and `opacity: 0`?"
+    },
+    {
+      "id": 63,
+      "question": "What are CSS animations, and how do you define keyframes?"
+    },
+    {
+      "id": 64,
+      "question": "How does `z-index` affect the stacking of elements?"
+    },
+    {
+      "id": 65,
+      "question": "What is the use of the `overflow` property in CSS?"
+    },
+    {
+      "id": 66,
+      "question": "How do grid and flexbox differ in layout control?"
+    },
+    {
+      "id": 67,
+      "question": "What does `object-fit: cover` do for images?"
+    },
+    {
+      "id": 68,
+      "question": "What is a media feature in a media query?"
+    },
+    {
+      "id": 69,
+      "question": "How do you center a div both vertically and horizontally using Flexbox?"
+    },
+    {
+      "id": 70,
+      "question": "Explain how `box-shadow` and `text-shadow` are different."
+    },
+    {
+      "id": 71,
+      "question": "What is the cascade in CSS and how does it affect styling?"
+    },
+    {
+      "id": 72,
+      "question": "How does `calc()` work in CSS?"
+    },
+    {
+      "id": 73,
+      "question": "What are the different types of positioning in CSS?"
+    },
+    {
+      "id": 74,
+      "question": "What is the `:nth-child()` selector used for?"
+    },
+    {
+      "id": 75,
+      "question": "What is the purpose of the `clip-path` property?"
+    },
+    {
+      "id": 76,
+      "question": "How can you apply a gradient background using CSS?"
+    },
+    {
+      "id": 77,
+      "question": "What does `box-sizing: border-box` mean?"
+    },
+    {
+      "id": 78,
+      "question": "What is the difference between a class selector and an attribute selector?"
+    },
+    {
+      "id": 79,
+      "question": "What does `currentColor` mean in CSS?"
+    },
+    {
+      "id": 80,
+      "question": "How do you make an element responsive using viewport units?"
+    },
+    {
+      "id": 81,
+      "question": "How do you apply different styles based on user interaction (like hover or focus)?"
+    },
+    {
+      "id": 82,
+      "question": "What does the `contain` property in CSS do?"
+    },
+    {
+      "id": 83,
+      "question": "What is the difference between `absolute` and `fixed` positioning?"
+    },
+    {
+      "id": 84,
+      "question": "How does layering work in CSS when using multiple backgrounds?"
+    },
+    {
+      "id": 85,
+      "question": "How do you make a sticky header using CSS?"
+    },
+    {
+      "id": 86,
+      "question": "What is the purpose of `pointer-events: none;`?"
+    },
+    {
+      "id": 87,
+      "question": "How do you control spacing with margin auto?"
+    },
+    {
+      "id": 88,
+      "question": "What does the `white-space` property do?"
+    },
+    {
+      "id": 89,
+      "question": "What are vendor prefixes in CSS, and why are they used?"
+    },
+    {
+      "id": 90,
+      "question": "What is the difference between `inline`, `block`, and `inline-block`?"
+    },
+    {
+      "id": 91,
+      "question": "What is stacking context in CSS?"
+    },
+    {
+      "id": 92,
+      "question": "How can you make a div scrollable only on Y-axis?"
+    },
+    {
+      "id": 93,
+      "question": "What is the difference between `visibility`, `display`, and `opacity`?"
+    },
+    {
+      "id": 94,
+      "question": "What does the `gap` property do in Flexbox and Grid?"
+    },
+    {
+      "id": 95,
+      "question": "How do you apply a transition effect only on hover?"
+    },
+    {
+      "id": 96,
+      "question": "What does the `inherit` keyword mean in CSS?"
+    },
+    {
+      "id": 97,
+      "question": "How do you use a background image with fallback color?"
+    },
+    {
+      "id": 98,
+      "question": "What is the role of `line-height` in text layout?"
+    },
+    {
+      "id": 99,
+      "question": "How do you visually hide content but keep it accessible for screen readers?"
+    },
+    {
+      "id": 100,
+      "question": "How can you animate a button click effect with CSS?"
+    }
+  ]
+}
