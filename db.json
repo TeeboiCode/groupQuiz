@@ -2,43 +2,37 @@
   "questions": [
     {
       "id": 1,
-      "question": "What does HTML stand for, and what is its primary role in web development?"
+      "question": "Write a function `reverseString(str)` that returns the reversed version of the string.\nExample: reverseString('hello') → 'olleh'"
     },
+
     {
       "id": 2,
-      "question": "Explain the difference between <div> and <span> tags."
+      "question": "Write a function `findMax(arr)` that returns the maximum number in an array.\nExample: findMax([3, 7, 2, 9]) → 9"
     },
     {
       "id": 3,
-      "question": "What is the function of the <head> and <body> tags in an HTML document?"
+      "question": "Write a function `factorial(n)` that returns the factorial of a number.\nExample: factorial(5) → 120"
     },
+
     {
       "id": 4,
-      "question": "Describe the use and importance of semantic HTML elements like <article>, <section>, and <nav>."
+      "question": "Write a function `isPrime(num)` that checks if a number is prime.\nExample: isPrime(7) → true, isPrime(10) → false"
     },
     {
       "id": 5,
-      "question": "Explain what the alt attribute does in an <img> tag."
+      "question": "Write a function `sumArray(arr)` that returns the sum of all numbers in an array.\nExample: sumArray([1, 2, 3, 4]) → 10"
     },
     {
       "id": 6,
-      "question": "What is the difference between absolute and relative links in HTML?"
+      "question": "Write a function `capitalizeWords(str)` that capitalizes the first letter of each word in a string.\nExample: capitalizeWords('hello world') → 'Hello World'"
     },
     {
       "id": 7,
-      "question": "What is the purpose of the <!DOCTYPE html> declaration?"
+      "question": "Write a function `countVowels(str)` that counts the number of vowels in a string.\nExample: countVowels('javascript') → 3"
     },
     {
       "id": 8,
-      "question": "What is the difference between an ordered list and an unordered list?"
-    },
-    {
-      "id": 9,
-      "question": "How do you create a hyperlink that opens in a new tab?"
-    },
-    {
-      "id": 10,
-      "question": "Explain the difference between id and class attributes."
+      "question": "Write a function `removeDuplicates(arr)` that removes duplicate values from an array.\nExample: removeDuplicates([1, 2, 2, 3, 4, 4, 5]) → [1, 2, 3, 4, 5]"
     }
   ]
 }

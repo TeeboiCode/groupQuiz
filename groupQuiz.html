@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Group Quiz Game</title>
+    <title>JavaScript Code Challenges</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,7 +13,7 @@
         <a href="index.html">
           <img src="./assests/download.png" alt="App Logo" />
         </a>
-        <span>Group Quiz</span>
+        <span>JavaScript Challenges</span>
       </div>
       <a href="scoreboard.html" class="scoreboard-btn">🏆 Scoreboard</a>
     </nav>
@@ -21,9 +21,9 @@
     <div class="container">
       <!-- Header -->
       <div class="header">
-        <h1>Pick a Question</h1>
+        <h1>Pick a Challenges</h1>
         <div class="question-tracker">
-          Current Question:
+          Current Challenge:
           <strong id="current-question-number">None</strong>
         </div>
       </div>
@@ -38,7 +38,9 @@
           Time Remaining: <span id="countdown">60</span> seconds
         </p>
         <button id="pass-to-bonus">⏭ Pass to Bonus</button>
-        <button id="back-to-grid" class="back-btn">🔙 Back to Questions</button>
+        <button id="back-to-grid" class="back-btn">
+          🔙 Back to Challenges
+        </button>
       </div>
 
       <!-- Preloader Countdown -->
@@ -78,7 +80,7 @@
       }
 
       function renderGrid(questions) {
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i <= 8; i++) {
           const btn = document.createElement("button");
           btn.className = "question-btn";
           btn.textContent = i;
@@ -104,7 +106,7 @@
           grid.style.display = "none";
           questionBox.style.display = "block";
 
-          startCountdown(60, () => {
+          startCountdown(600, () => {
             passBtn.style.display = "inline-block";
           });
         });
@@ -149,7 +151,7 @@
           title: `🎉 ${groupName} Wins!`,
           text: `Congratulations! ${groupName} reached the winning score!`,
           icon: "success",
-          timer: 180000, // 3 minutes
+          timer: 280000, // 3 minutes
           timerProgressBar: true,
           allowOutsideClick: false,
           allowEscapeKey: false,
