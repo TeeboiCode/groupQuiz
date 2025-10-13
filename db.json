@@ -2,37 +2,123 @@
   "questions": [
     {
       "id": 1,
-      "question": "Write a function `reverseString(str)` that returns the reversed version of the string.\nExample: reverseString('hello') → 'olleh'"
+      "question": "What is CSS and how does it work to style HTML elements? Explain the difference between inline, internal, and external CSS."
     },
-
     {
       "id": 2,
-      "question": "Write a function `findMax(arr)` that returns the maximum number in an array.\nExample: findMax([3, 7, 2, 9]) → 9"
+      "question": "Write an example of CSS syntax showing a selector, property, and value, and explain each part."
     },
     {
       "id": 3,
-      "question": "Write a function `factorial(n)` that returns the factorial of a number.\nExample: factorial(5) → 120"
+      "question": "What are the different types of CSS selectors and when should each be used? (Universal, Element, Class, ID)"
     },
-
     {
       "id": 4,
-      "question": "Write a function `isPrime(num)` that checks if a number is prime.\nExample: isPrime(7) → true, isPrime(10) → false"
+      "question": "Explain the difference between grouping selectors, descendant selectors, child selectors, and attribute selectors with examples."
     },
     {
       "id": 5,
-      "question": "Write a function `sumArray(arr)` that returns the sum of all numbers in an array.\nExample: sumArray([1, 2, 3, 4]) → 10"
+      "question": "Describe the CSS box model. What are the four main parts that make up every element's box?"
     },
     {
       "id": 6,
-      "question": "Write a function `capitalizeWords(str)` that capitalizes the first letter of each word in a string.\nExample: capitalizeWords('hello world') → 'Hello World'"
+      "question": "What does the CSS 'display' property do? Explain the differences between block, inline, inline-block, and none."
     },
     {
       "id": 7,
-      "question": "Write a function `countVowels(str)` that counts the number of vowels in a string.\nExample: countVowels('javascript') → 3"
+      "question": "How do the different CSS positioning values (static, relative, absolute, fixed, sticky) work? Provide examples."
     },
     {
       "id": 8,
-      "question": "Write a function `removeDuplicates(arr)` that removes duplicate values from an array.\nExample: removeDuplicates([1, 2, 2, 3, 4, 4, 5]) → [1, 2, 3, 4, 5]"
+      "question": "Explain how the 'float' and 'clear' properties work together in CSS layout."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the z-index property, and how does the stacking context affect element order?"
+    },
+    {
+      "id": 10,
+      "question": "What is CSS specificity and how does it determine which styles are applied when multiple rules target the same element?"
+    },
+    {
+      "id": 11,
+      "question": "What are the main units of measurement in CSS (px, em, rem, %, vh, vw)? When should each be used?"
+    },
+    {
+      "id": 12,
+      "question": "How can you apply custom colors in CSS using color names, hex codes, RGB, RGBA, and HSL?"
+    },
+    {
+      "id": 13,
+      "question": "Explain how font-family, font-size, font-weight, and line-height affect typography in CSS."
+    },
+    {
+      "id": 14,
+      "question": "How can you style links using pseudo-classes like :link, :visited, :hover, and :active?"
+    },
+    {
+      "id": 15,
+      "question": "Write CSS code to remove bullet points from a list and style the list items horizontally."
+    },
+    {
+      "id": 16,
+      "question": "How can you style a table to have alternating row colors and hover effects?"
+    },
+    {
+      "id": 17,
+      "question": "Explain how to set background color, background image, and background gradient in CSS."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between border and outline properties in CSS? How can border-radius and box-shadow be used creatively?"
+    },
+    {
+      "id": 19,
+      "question": "What are pseudo-classes and pseudo-elements? Give examples using :hover, :before, and :after."
+    },
+    {
+      "id": 20,
+      "question": "What are CSS variables (custom properties) and how do they improve maintainability in large projects?"
+    },
+    {
+      "id": 21,
+      "question": "How do you define and use CSS variables with fallback values?"
+    },
+    {
+      "id": 22,
+      "question": "What is the difference between CSS transitions and CSS animations? Give an example of each."
+    },
+    {
+      "id": 23,
+      "question": "Write a CSS keyframes animation that moves a box from left to right continuously."
+    },
+    {
+      "id": 24,
+      "question": "Explain the difference between the main axis and cross axis in Flexbox layout."
+    },
+    {
+      "id": 25,
+      "question": "What do the justify-content, align-items, and align-content properties do in a Flexbox container?"
+    },
+    {
+      "id": 26,
+      "question": "Write a CSS example to create a responsive navigation bar using Flexbox."
+    },
+    {
+      "id": 27,
+      "question": "Explain the difference between grid-template-rows and grid-template-columns in CSS Grid."
+    },
+    {
+      "id": 28,
+      "question": "How do you define grid-template-areas and use them to layout a webpage?"
+    },
+    {
+      "id": 29,
+      "question": "What is the role of gap, justify-items, and align-items in CSS Grid layout?"
+    },
+    {
+      "id": 30,
+      "question": "Write a CSS Grid example that creates a responsive 3-column layout that turns into a single column on small screens."
     }
   ]
 }
