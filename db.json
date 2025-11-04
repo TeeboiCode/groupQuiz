@@ -2,123 +2,123 @@
   "questions": [
     {
       "id": 1,
-      "question": "What is CSS and how does it work to style HTML elements? Explain the difference between inline, internal, and external CSS."
+      "question": "What are JavaScript primitive data types? List the five primitive types and briefly describe each one."
     },
     {
       "id": 2,
-      "question": "Write an example of CSS syntax showing a selector, property, and value, and explain each part."
+      "question": "What is a String in JavaScript, and how is it created? Provide two examples of string declarations."
     },
     {
       "id": 3,
-      "question": "What are the different types of CSS selectors and when should each be used? (Universal, Element, Class, ID)"
+      "question": "Explain the difference between single quotes, double quotes, and backticks when declaring strings in JavaScript."
     },
     {
       "id": 4,
-      "question": "Explain the difference between grouping selectors, descendant selectors, child selectors, and attribute selectors with examples."
+      "question": "What is a Number data type in JavaScript? Give examples of integer, float, and scientific notation."
     },
     {
       "id": 5,
-      "question": "Describe the CSS box model. What are the four main parts that make up every element's box?"
+      "question": "What does NaN stand for in JavaScript, and when does it usually occur?"
     },
     {
       "id": 6,
-      "question": "What does the CSS 'display' property do? Explain the differences between block, inline, inline-block, and none."
+      "question": "What is the Boolean data type used for? Write a code example that uses true and false in a conditional statement."
     },
     {
       "id": 7,
-      "question": "How do the different CSS positioning values (static, relative, absolute, fixed, sticky) work? Provide examples."
+      "question": "What is the difference between null and undefined in JavaScript? Give examples of when each occurs."
     },
     {
       "id": 8,
-      "question": "Explain how the 'float' and 'clear' properties work together in CSS layout."
+      "question": "Write a JavaScript statement that declares a variable with a null value and another with an undefined value."
     },
     {
       "id": 9,
-      "question": "What is the purpose of the z-index property, and how does the stacking context affect element order?"
+      "question": "How does JavaScript determine the type of a value? Write an example using the typeof operator for each primitive type."
     },
     {
       "id": 10,
-      "question": "What is CSS specificity and how does it determine which styles are applied when multiple rules target the same element?"
+      "question": "What is the difference between primitive and non-primitive data types in JavaScript?"
     },
     {
       "id": 11,
-      "question": "What are the main units of measurement in CSS (px, em, rem, %, vh, vw)? When should each be used?"
+      "question": "What is the difference between var, let, and const in JavaScript variable declarations?"
     },
     {
       "id": 12,
-      "question": "How can you apply custom colors in CSS using color names, hex codes, RGB, RGBA, and HSL?"
+      "question": "What is variable hoisting in JavaScript, and how does it behave differently for var, let, and const?"
     },
     {
       "id": 13,
-      "question": "Explain how font-family, font-size, font-weight, and line-height affect typography in CSS."
+      "question": "Write an example showing how a variable declared with var can be redeclared, but let and const cannot."
     },
     {
       "id": 14,
-      "question": "How can you style links using pseudo-classes like :link, :visited, :hover, and :active?"
+      "question": "Explain what happens when you try to reassign a value to a variable declared with const."
     },
     {
       "id": 15,
-      "question": "Write CSS code to remove bullet points from a list and style the list items horizontally."
+      "question": "Why is it recommended to use let or const instead of var in modern JavaScript?"
     },
     {
       "id": 16,
-      "question": "How can you style a table to have alternating row colors and hover effects?"
+      "question": "Write a simple if statement that checks whether a number is positive and logs a message to the console."
     },
     {
       "id": 17,
-      "question": "Explain how to set background color, background image, and background gradient in CSS."
+      "question": "Write an if-else statement that checks if a user is 18 or older and displays 'Adult' or 'Minor' accordingly."
     },
     {
       "id": 18,
-      "question": "What is the difference between border and outline properties in CSS? How can border-radius and box-shadow be used creatively?"
+      "question": "Explain the purpose of the else if statement in JavaScript. Provide a short code example."
     },
     {
       "id": 19,
-      "question": "What are pseudo-classes and pseudo-elements? Give examples using :hover, :before, and :after."
+      "question": "What happens if none of the if or else if conditions evaluate to true and there is no else block?"
     },
     {
       "id": 20,
-      "question": "What are CSS variables (custom properties) and how do they improve maintainability in large projects?"
+      "question": "Write a JavaScript program using if, else if, and else that grades a score: A (90–100), B (80–89), C (70–79), D (60–69), F (below 60)."
     },
     {
       "id": 21,
-      "question": "How do you define and use CSS variables with fallback values?"
+      "question": "What is the difference between == and === in JavaScript condition checks? Give examples of each."
     },
     {
       "id": 22,
-      "question": "What is the difference between CSS transitions and CSS animations? Give an example of each."
+      "question": "Write an if statement that checks whether a variable named 'status' is either 'active' or 'pending'."
     },
     {
       "id": 23,
-      "question": "Write a CSS keyframes animation that moves a box from left to right continuously."
+      "question": "Explain what truthy and falsy values are in JavaScript, and give five examples of falsy values."
     },
     {
       "id": 24,
-      "question": "Explain the difference between the main axis and cross axis in Flexbox layout."
+      "question": "Write a code example that demonstrates how undefined and null behave differently in an if condition."
     },
     {
       "id": 25,
-      "question": "What do the justify-content, align-items, and align-content properties do in a Flexbox container?"
+      "question": "What happens when you try to use an undeclared variable in JavaScript?"
     },
     {
       "id": 26,
-      "question": "Write a CSS example to create a responsive navigation bar using Flexbox."
+      "question": "Write a program that uses if-else to check whether a number is even or odd."
     },
     {
       "id": 27,
-      "question": "Explain the difference between grid-template-rows and grid-template-columns in CSS Grid."
+      "question": "Write a JavaScript example showing how a Boolean variable can be used to toggle between two states."
     },
     {
       "id": 28,
-      "question": "How do you define grid-template-areas and use them to layout a webpage?"
+      "question": "Explain what happens when you compare a string and a number using == and === operators."
     },
     {
       "id": 29,
-      "question": "What is the role of gap, justify-items, and align-items in CSS Grid layout?"
+      "question": "Write a small script that checks if a variable is undefined before using it to prevent an error."
     },
     {
       "id": 30,
-      "question": "Write a CSS Grid example that creates a responsive 3-column layout that turns into a single column on small screens."
+      "question": "Combine everything: Write a short program that declares variables with let and const, checks their types, and uses an if-else block to log messages based on their values."
     }
   ]
 }
