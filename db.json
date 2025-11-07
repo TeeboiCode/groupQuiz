@@ -2,123 +2,143 @@
   "questions": [
     {
       "id": 1,
-      "question": "What are JavaScript primitive data types? List the five primitive types and briefly describe each one."
+      "question": "What does HTML stand for?"
     },
     {
       "id": 2,
-      "question": "What is a String in JavaScript, and how is it created? Provide two examples of string declarations."
+      "question": "Which tag defines the main content of an HTML document?"
     },
     {
       "id": 3,
-      "question": "Explain the difference between single quotes, double quotes, and backticks when declaring strings in JavaScript."
+      "question": "What is the purpose of the <head> element in HTML?"
     },
     {
       "id": 4,
-      "question": "What is a Number data type in JavaScript? Give examples of integer, float, and scientific notation."
+      "question": "What is an HTML attribute and where is it placed?"
     },
     {
       "id": 5,
-      "question": "What does NaN stand for in JavaScript, and when does it usually occur?"
+      "question": "Which attribute is used to provide extra information about an element?"
     },
     {
       "id": 6,
-      "question": "What is the Boolean data type used for? Write a code example that uses true and false in a conditional statement."
+      "question": "Which tag defines the largest heading in HTML?"
     },
     {
       "id": 7,
-      "question": "What is the difference between null and undefined in JavaScript? Give examples of when each occurs."
+      "question": "Which HTML tag is used to create a paragraph?"
     },
     {
       "id": 8,
-      "question": "Write a JavaScript statement that declares a variable with a null value and another with an undefined value."
+      "question": "How do you apply inline CSS styles to an HTML element?"
     },
     {
       "id": 9,
-      "question": "How does JavaScript determine the type of a value? Write an example using the typeof operator for each primitive type."
+      "question": "Which CSS property is used to change the background color of an element?"
     },
     {
       "id": 10,
-      "question": "What is the difference between primitive and non-primitive data types in JavaScript?"
+      "question": "Which HTML tags are used for bold and italic text formatting?"
     },
     {
       "id": 11,
-      "question": "What is the difference between var, let, and const in JavaScript variable declarations?"
+      "question": "What is the correct syntax for adding a comment in HTML?"
     },
     {
       "id": 12,
-      "question": "What is variable hoisting in JavaScript, and how does it behave differently for var, let, and const?"
+      "question": "What are the three ways to specify color values in HTML?"
     },
     {
       "id": 13,
-      "question": "Write an example showing how a variable declared with var can be redeclared, but let and const cannot."
+      "question": "What does RGB stand for in HTML color values?"
     },
     {
       "id": 14,
-      "question": "Explain what happens when you try to reassign a value to a variable declared with const."
+      "question": "What does HSL stand for when defining colors in HTML?"
     },
     {
       "id": 15,
-      "question": "Why is it recommended to use let or const instead of var in modern JavaScript?"
+      "question": "How do you link an external CSS file to an HTML document?"
     },
     {
       "id": 16,
-      "question": "Write a simple if statement that checks whether a number is positive and logs a message to the console."
+      "question": "Which tag is used to create a hyperlink in HTML?"
     },
     {
       "id": 17,
-      "question": "Write an if-else statement that checks if a user is 18 or older and displays 'Adult' or 'Minor' accordingly."
+      "question": "Which attribute specifies the URL for a hyperlink?"
     },
     {
       "id": 18,
-      "question": "Explain the purpose of the else if statement in JavaScript. Provide a short code example."
+      "question": "How can you create a bookmark link within a webpage?"
     },
     {
       "id": 19,
-      "question": "What happens if none of the if or else if conditions evaluate to true and there is no else block?"
+      "question": "Which attribute is used to open a link in a new browser tab?"
     },
     {
       "id": 20,
-      "question": "Write a JavaScript program using if, else if, and else that grades a score: A (90–100), B (80–89), C (70–79), D (60–69), F (below 60)."
+      "question": "Which tag is used to embed an image in HTML?"
     },
     {
       "id": 21,
-      "question": "What is the difference between == and === in JavaScript condition checks? Give examples of each."
+      "question": "Which attributes are required inside the <img> tag?"
     },
     {
       "id": 22,
-      "question": "Write an if statement that checks whether a variable named 'status' is either 'active' or 'pending'."
+      "question": "How do you add a background image to a webpage using inline CSS?"
     },
     {
       "id": 23,
-      "question": "Explain what truthy and falsy values are in JavaScript, and give five examples of falsy values."
+      "question": "What is a favicon and how is it added to a webpage?"
     },
     {
       "id": 24,
-      "question": "Write a code example that demonstrates how undefined and null behave differently in an if condition."
+      "question": "Which HTML tag defines the title of a webpage shown on the browser tab?"
     },
     {
       "id": 25,
-      "question": "What happens when you try to use an undeclared variable in JavaScript?"
+      "question": "Which HTML element is used to create a table?"
     },
     {
       "id": 26,
-      "question": "Write a program that uses if-else to check whether a number is even or odd."
+      "question": "What does the <th> tag represent inside a table?"
     },
     {
       "id": 27,
-      "question": "Write a JavaScript example showing how a Boolean variable can be used to toggle between two states."
+      "question": "Which tag is used to define a table row?"
     },
     {
       "id": 28,
-      "question": "Explain what happens when you compare a string and a number using == and === operators."
+      "question": "Which tag is used to define a table data cell?"
     },
     {
       "id": 29,
-      "question": "Write a small script that checks if a variable is undefined before using it to prevent an error."
+      "question": "How can you set a border around a table using the border attribute?"
     },
     {
       "id": 30,
-      "question": "Combine everything: Write a short program that declares variables with let and const, checks their types, and uses an if-else block to log messages based on their values."
+      "question": "Which CSS property controls the space inside table cells (padding)?"
+    },
+    {
+      "id": 31,
+      "question": "What is the use of the colspan attribute in HTML tables?"
+    },
+    {
+      "id": 32,
+      "question": "What is the use of the rowspan attribute in HTML tables?"
+    },
+    {
+      "id": 33,
+      "question": "How can you change the background color of a table header using CSS?"
+    },
+    {
+      "id": 34,
+      "question": "What property can you use to make table borders collapse into a single border?"
+    },
+    {
+      "id": 35,
+      "question": "How do you center a table horizontally on a webpage using CSS?"
     }
   ]
 }
