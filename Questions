@@ -397,4 +397,129 @@
     }
   ]
 }
+
+{
+  "questions JavaScript intro": [
+    {
+      "id": 1,
+      "question": "What are JavaScript primitive data types? List the five primitive types and briefly describe each one."
+    },
+    {
+      "id": 2,
+      "question": "What is a String in JavaScript, and how is it created? Provide two examples of string declarations."
+    },
+    {
+      "id": 3,
+      "question": "Explain the difference between single quotes, double quotes, and backticks when declaring strings in JavaScript."
+    },
+    {
+      "id": 4,
+      "question": "What is a Number data type in JavaScript? Give examples of integer, float, and scientific notation."
+    },
+    {
+      "id": 5,
+      "question": "What does NaN stand for in JavaScript, and when does it usually occur?"
+    },
+    {
+      "id": 6,
+      "question": "What is the Boolean data type used for? Write a code example that uses true and false in a conditional statement."
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between null and undefined in JavaScript? Give examples of when each occurs."
+    },
+    {
+      "id": 8,
+      "question": "Write a JavaScript statement that declares a variable with a null value and another with an undefined value."
+    },
+    {
+      "id": 9,
+      "question": "How does JavaScript determine the type of a value? Write an example using the typeof operator for each primitive type."
+    },
+    {
+      "id": 10,
+      "question": "What is the difference between primitive and non-primitive data types in JavaScript?"
+    },
+    {
+      "id": 11,
+      "question": "What is the difference between var, let, and const in JavaScript variable declarations?"
+    },
+    {
+      "id": 12,
+      "question": "What is variable hoisting in JavaScript, and how does it behave differently for var, let, and const?"
+    },
+    {
+      "id": 13,
+      "question": "Write an example showing how a variable declared with var can be redeclared, but let and const cannot."
+    },
+    {
+      "id": 14,
+      "question": "Explain what happens when you try to reassign a value to a variable declared with const."
+    },
+    {
+      "id": 15,
+      "question": "Why is it recommended to use let or const instead of var in modern JavaScript?"
+    },
+    {
+      "id": 16,
+      "question": "Write a simple if statement that checks whether a number is positive and logs a message to the console."
+    },
+    {
+      "id": 17,
+      "question": "Write an if-else statement that checks if a user is 18 or older and displays 'Adult' or 'Minor' accordingly."
+    },
+    {
+      "id": 18,
+      "question": "Explain the purpose of the else if statement in JavaScript. Provide a short code example."
+    },
+    {
+      "id": 19,
+      "question": "What happens if none of the if or else if conditions evaluate to true and there is no else block?"
+    },
+    {
+      "id": 20,
+      "question": "Write a JavaScript program using if, else if, and else that grades a score: A (90–100), B (80–89), C (70–79), D (60–69), F (below 60)."
+    },
+    {
+      "id": 21,
+      "question": "What is the difference between == and === in JavaScript condition checks? Give examples of each."
+    },
+    {
+      "id": 22,
+      "question": "Write an if statement that checks whether a variable named 'status' is either 'active' or 'pending'."
+    },
+    {
+      "id": 23,
+      "question": "Explain what truthy and falsy values are in JavaScript, and give five examples of falsy values."
+    },
+    {
+      "id": 24,
+      "question": "Write a code example that demonstrates how undefined and null behave differently in an if condition."
+    },
+    {
+      "id": 25,
+      "question": "What happens when you try to use an undeclared variable in JavaScript?"
+    },
+    {
+      "id": 26,
+      "question": "Write a program that uses if-else to check whether a number is even or odd."
+    },
+    {
+      "id": 27,
+      "question": "Write a JavaScript example showing how a Boolean variable can be used to toggle between two states."
+    },
+    {
+      "id": 28,
+      "question": "Explain what happens when you compare a string and a number using == and === operators."
+    },
+    {
+      "id": 29,
+      "question": "Write a small script that checks if a variable is undefined before using it to prevent an error."
+    },
+    {
+      "id": 30,
+      "question": "Combine everything: Write a short program that declares variables with let and const, checks their types, and uses an if-else block to log messages based on their values."
+    }
+  ]
+}
  
