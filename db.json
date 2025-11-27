@@ -2,143 +2,143 @@
   "questions": [
     {
       "id": 1,
-      "question": "What does HTML stand for?"
+      "question": "How do you access the value of a property named 'name' from an object called user?"
     },
     {
       "id": 2,
-      "question": "Which tag defines the main content of an HTML document?"
+      "question": "How do you add a new property 'age' with value 25 to an existing object person?"
     },
     {
       "id": 3,
-      "question": "What is the purpose of the <head> element in HTML?"
+      "question": "Which JavaScript keyword is used to delete a property from an object?"
     },
     {
       "id": 4,
-      "question": "What is an HTML attribute and where is it placed?"
+      "question": "What does the for...in loop iterate over in an object?"
     },
     {
       "id": 5,
-      "question": "Which attribute is used to provide extra information about an element?"
+      "question": "How do you access the third element of an array named items?"
     },
     {
       "id": 6,
-      "question": "Which tag defines the largest heading in HTML?"
+      "question": "Which array method adds an element to the end of an array?"
     },
     {
       "id": 7,
-      "question": "Which HTML tag is used to create a paragraph?"
+      "question": "Which array method removes the last element of an array?"
     },
     {
       "id": 8,
-      "question": "How do you apply inline CSS styles to an HTML element?"
+      "question": "Which array method adds an element to the beginning of an array?"
     },
     {
       "id": 9,
-      "question": "Which CSS property is used to change the background color of an element?"
+      "question": "Which array method removes the first element from an array?"
     },
     {
       "id": 10,
-      "question": "Which HTML tags are used for bold and italic text formatting?"
+      "question": "Which array method joins all array elements into a string?"
     },
     {
       "id": 11,
-      "question": "What is the correct syntax for adding a comment in HTML?"
+      "question": "Which array method is used to remove or replace elements by index?"
     },
     {
       "id": 12,
-      "question": "What are the three ways to specify color values in HTML?"
+      "question": "Which array method returns a new array containing only elements that pass a test function?"
     },
     {
       "id": 13,
-      "question": "What does RGB stand for in HTML color values?"
+      "question": "Which array method creates a new array by applying a function to each element?"
     },
     {
       "id": 14,
-      "question": "What does HSL stand for when defining colors in HTML?"
+      "question": "Which array method finds the first element that satisfies a test function?"
     },
     {
       "id": 15,
-      "question": "How do you link an external CSS file to an HTML document?"
+      "question": "Which array method checks if at least one element passes a test function?"
     },
     {
       "id": 16,
-      "question": "Which tag is used to create a hyperlink in HTML?"
+      "question": "How do you loop through an array of numbers using a for loop?"
     },
     {
       "id": 17,
-      "question": "Which attribute specifies the URL for a hyperlink?"
+      "question": "What is the basic syntax of a while loop in JavaScript?"
     },
     {
       "id": 18,
-      "question": "How can you create a bookmark link within a webpage?"
+      "question": "Which keyword is used to stop a loop prematurely?"
     },
     {
       "id": 19,
-      "question": "Which attribute is used to open a link in a new browser tab?"
+      "question": "Which keyword skips one iteration of a loop and continues with the next?"
     },
     {
       "id": 20,
-      "question": "Which tag is used to embed an image in HTML?"
+      "question": "How do you check if a number x is greater than 10 using an if statement?"
     },
     {
       "id": 21,
-      "question": "Which attributes are required inside the <img> tag?"
+      "question": "What is the correct syntax to define a function named greet?"
     },
     {
       "id": 22,
-      "question": "How do you add a background image to a webpage using inline CSS?"
+      "question": "How do you call a function named calculate?"
     },
     {
       "id": 23,
-      "question": "What is a favicon and how is it added to a webpage?"
+      "question": "What keyword is used to return a value from a function?"
     },
     {
       "id": 24,
-      "question": "Which HTML tag defines the title of a webpage shown on the browser tab?"
+      "question": "How do you write an arrow function that returns the square of a number n?"
     },
     {
       "id": 25,
-      "question": "Which HTML element is used to create a table?"
+      "question": "How can you check how many properties are in an object using JavaScript?"
     },
     {
       "id": 26,
-      "question": "What does the <th> tag represent inside a table?"
+      "question": "How do you convert an object’s values into an array?"
     },
     {
       "id": 27,
-      "question": "Which tag is used to define a table row?"
+      "question": "Which loop should you use to iterate over array indexes: for...in or for...of?"
     },
     {
       "id": 28,
-      "question": "Which tag is used to define a table data cell?"
+      "question": "How do you check if an array contains a specific value using a built-in method?"
     },
     {
       "id": 29,
-      "question": "How can you set a border around a table using the border attribute?"
+      "question": "Which array method sorts elements alphabetically or numerically?"
     },
     {
       "id": 30,
-      "question": "Which CSS property controls the space inside table cells (padding)?"
+      "question": "How do you create an empty object in JavaScript?"
     },
     {
       "id": 31,
-      "question": "What is the use of the colspan attribute in HTML tables?"
+      "question": "How do you merge two arrays arr1 and arr2 using the spread operator?"
     },
     {
       "id": 32,
-      "question": "What is the use of the rowspan attribute in HTML tables?"
+      "question": "How do you loop through all keys and values in an object using for...in?"
     },
     {
       "id": 33,
-      "question": "How can you change the background color of a table header using CSS?"
+      "question": "Which array method removes elements from a specific index and returns them?"
     },
     {
       "id": 34,
-      "question": "What property can you use to make table borders collapse into a single border?"
+      "question": "How do you find the length of an array named scores?"
     },
     {
       "id": 35,
-      "question": "How do you center a table horizontally on a webpage using CSS?"
+      "question": "How do you create a function that accepts two parameters and returns their sum?"
     }
   ]
 }
