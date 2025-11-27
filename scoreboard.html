@@ -83,8 +83,8 @@
         <p>Score: <strong id="score-a">0</strong></p>
         <p>Bonus: <strong id="bonus-a">0</strong></p>
         <div class="controls" style="margin-top: 10px">
-          <button class="question-btn" onclick="addScore('a')">+5 Score</button>
-          <button class="question-btn" onclick="addBonus('a')">+3 Bonus</button>
+          <button class="question-btn" onclick="addScore('a')">+1 Score</button>
+          <button class="question-btn" onclick="addBonus('a')">+1 Bonus</button>
         </div>
       </div>
 
@@ -94,8 +94,8 @@
         <p>Score: <strong id="score-b">0</strong></p>
         <p>Bonus: <strong id="bonus-b">0</strong></p>
         <div class="controls" style="margin-top: 10px">
-          <button class="question-btn" onclick="addScore('b')">+5 Score</button>
-          <button class="question-btn" onclick="addBonus('b')">+3 Bonus</button>
+          <button class="question-btn" onclick="addScore('b')">+1 Score</button>
+          <button class="question-btn" onclick="addBonus('b')">+1 Bonus</button>
         </div>
       </div>
     </div>
@@ -155,13 +155,13 @@
 
       function addScore(group) {
         if (gameOver) return;
-        score[group] += 5;
+        score[group] += 1;
         updateDisplay();
       }
 
       function addBonus(group) {
         if (gameOver) return;
-        bonus[group] += 3;
+        bonus[group] += 1;
         updateDisplay();
       }
 
