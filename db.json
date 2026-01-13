@@ -2,143 +2,123 @@
   "questions": [
     {
       "id": 1,
-      "question": "How do you access the value of a property named 'name' from an object called user?"
+      "question": "What is an HTML element and what parts does it usually consist of?"
     },
     {
       "id": 2,
-      "question": "How do you add a new property 'age' with value 25 to an existing object person?"
+      "question": "What is the difference between an HTML tag and an HTML element?"
     },
     {
       "id": 3,
-      "question": "Which JavaScript keyword is used to delete a property from an object?"
+      "question": "Which HTML tag is used to define the main heading of a webpage?"
     },
     {
       "id": 4,
-      "question": "What does the for...in loop iterate over in an object?"
+      "question": "How many heading levels are available in HTML and which one is the largest?"
     },
     {
       "id": 5,
-      "question": "How do you access the third element of an array named items?"
+      "question": "Which HTML tag is used to create a paragraph of text?"
     },
     {
       "id": 6,
-      "question": "Which array method adds an element to the end of an array?"
+      "question": "What happens by default when text is written inside a paragraph tag?"
     },
     {
       "id": 7,
-      "question": "Which array method removes the last element of an array?"
+      "question": "Which HTML tag is used to display an image on a webpage?"
     },
     {
       "id": 8,
-      "question": "Which array method adds an element to the beginning of an array?"
+      "question": "Which attribute is required to specify the image source in an image tag?"
     },
     {
       "id": 9,
-      "question": "Which array method removes the first element from an array?"
+      "question": "What is the purpose of the alt attribute in an image element?"
     },
     {
       "id": 10,
-      "question": "Which array method joins all array elements into a string?"
+      "question": "Which HTML tag is used to create an unordered list?"
     },
     {
       "id": 11,
-      "question": "Which array method is used to remove or replace elements by index?"
+      "question": "Which HTML tag is used to create an ordered list?"
     },
     {
       "id": 12,
-      "question": "Which array method returns a new array containing only elements that pass a test function?"
+      "question": "Which HTML tag is used to define an item inside a list?"
     },
     {
       "id": 13,
-      "question": "Which array method creates a new array by applying a function to each element?"
+      "question": "What is the main difference between ordered and unordered lists in HTML?"
     },
     {
       "id": 14,
-      "question": "Which array method finds the first element that satisfies a test function?"
+      "question": "Which HTML tag is used to create a form on a webpage?"
     },
     {
       "id": 15,
-      "question": "Which array method checks if at least one element passes a test function?"
+      "question": "Which form attribute specifies where the form data should be sent?"
     },
     {
       "id": 16,
-      "question": "How do you loop through an array of numbers using a for loop?"
+      "question": "Which HTML tag is commonly used to create a text input field in a form?"
     },
     {
       "id": 17,
-      "question": "What is the basic syntax of a while loop in JavaScript?"
+      "question": "Which attribute is used to give an input field a name for form submission?"
     },
     {
       "id": 18,
-      "question": "Which keyword is used to stop a loop prematurely?"
+      "question": "Which HTML tag is used to create a submit button in a form?"
     },
     {
       "id": 19,
-      "question": "Which keyword skips one iteration of a loop and continues with the next?"
+      "question": "What is an HTML attribute and where is it written?"
     },
     {
       "id": 20,
-      "question": "How do you check if a number x is greater than 10 using an if statement?"
+      "question": "Which attribute is used to uniquely identify an HTML element?"
     },
     {
       "id": 21,
-      "question": "What is the correct syntax to define a function named greet?"
+      "question": "Which attribute is commonly used to apply styles or group elements together?"
     },
     {
       "id": 22,
-      "question": "How do you call a function named calculate?"
+      "question": "What does frontend development mainly focus on in web development?"
     },
     {
       "id": 23,
-      "question": "What keyword is used to return a value from a function?"
+      "question": "Which technologies are commonly used in frontend development?"
     },
     {
       "id": 24,
-      "question": "How do you write an arrow function that returns the square of a number n?"
+      "question": "What does backend development handle in a web application?"
     },
     {
       "id": 25,
-      "question": "How can you check how many properties are in an object using JavaScript?"
+      "question": "Which part of a website communicates with the database, frontend or backend?"
     },
     {
       "id": 26,
-      "question": "How do you convert an object’s values into an array?"
+      "question": "Which HTML tag is used to create a clickable link?"
     },
     {
       "id": 27,
-      "question": "Which loop should you use to iterate over array indexes: for...in or for...of?"
+      "question": "Which attribute is used to specify the destination of a link?"
     },
     {
       "id": 28,
-      "question": "How do you check if an array contains a specific value using a built-in method?"
+      "question": "What is the purpose of the <head> section in an HTML document?"
     },
     {
       "id": 29,
-      "question": "Which array method sorts elements alphabetically or numerically?"
+      "question": "What is the purpose of the <body> tag in HTML?"
     },
     {
       "id": 30,
-      "question": "How do you create an empty object in JavaScript?"
-    },
-    {
-      "id": 31,
-      "question": "How do you merge two arrays arr1 and arr2 using the spread operator?"
-    },
-    {
-      "id": 32,
-      "question": "How do you loop through all keys and values in an object using for...in?"
-    },
-    {
-      "id": 33,
-      "question": "Which array method removes elements from a specific index and returns them?"
-    },
-    {
-      "id": 34,
-      "question": "How do you find the length of an array named scores?"
-    },
-    {
-      "id": 35,
-      "question": "How do you create a function that accepts two parameters and returns their sum?"
+      "question": "Why is HTML considered a frontend technology and not a backend technology?"
     }
   ]
 }
