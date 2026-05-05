@@ -2,123 +2,163 @@
   "questions": [
     {
       "id": 1,
-      "question": "What is an HTML element and what parts does it usually consist of?"
+      "question": "What is HTML and what is its primary purpose in web development?"
     },
     {
       "id": 2,
-      "question": "What is the difference between an HTML tag and an HTML element?"
+      "question": "What does the acronym HTML stand for?"
     },
     {
       "id": 3,
-      "question": "Which HTML tag is used to define the main heading of a webpage?"
+      "question": "What is the basic structure of an HTML document?"
     },
     {
       "id": 4,
-      "question": "How many heading levels are available in HTML and which one is the largest?"
+      "question": "Which HTML tag is used to define the root of an HTML document?"
     },
     {
       "id": 5,
-      "question": "Which HTML tag is used to create a paragraph of text?"
+      "question": "What is the difference between the <head> and <body> sections?"
     },
     {
       "id": 6,
-      "question": "What happens by default when text is written inside a paragraph tag?"
+      "question": "What is an HTML element and what does it contain?"
     },
     {
       "id": 7,
-      "question": "Which HTML tag is used to display an image on a webpage?"
+      "question": "What is the difference between a tag and an attribute in HTML?"
     },
     {
       "id": 8,
-      "question": "Which attribute is required to specify the image source in an image tag?"
+      "question": "Where are attributes placed inside an HTML element?"
     },
     {
       "id": 9,
-      "question": "What is the purpose of the alt attribute in an image element?"
+      "question": "What is a meta tag and where is it placed in an HTML document?"
     },
     {
       "id": 10,
-      "question": "Which HTML tag is used to create an unordered list?"
+      "question": "Which meta tag is used to define the character encoding of a webpage?"
     },
     {
       "id": 11,
-      "question": "Which HTML tag is used to create an ordered list?"
+      "question": "Which HTML tags are used for headings?"
     },
     {
       "id": 12,
-      "question": "Which HTML tag is used to define an item inside a list?"
+      "question": "What is the difference between <h1> and <h6> tags?"
     },
     {
       "id": 13,
-      "question": "What is the main difference between ordered and unordered lists in HTML?"
+      "question": "Which tag is used to create a paragraph in HTML?"
     },
     {
       "id": 14,
-      "question": "Which HTML tag is used to create a form on a webpage?"
+      "question": "What are semantic HTML elements?"
     },
     {
       "id": 15,
-      "question": "Which form attribute specifies where the form data should be sent?"
+      "question": "Give examples of semantic HTML elements."
     },
     {
       "id": 16,
-      "question": "Which HTML tag is commonly used to create a text input field in a form?"
+      "question": "What is the difference between <div> and <span>?"
     },
     {
       "id": 17,
-      "question": "Which attribute is used to give an input field a name for form submission?"
+      "question": "What is the difference between block-level and inline elements?"
     },
     {
       "id": 18,
-      "question": "Which HTML tag is used to create a submit button in a form?"
+      "question": "Which HTML tag is used to create an unordered list?"
     },
     {
       "id": 19,
-      "question": "What is an HTML attribute and where is it written?"
+      "question": "Which HTML tag is used to create an ordered list?"
     },
     {
       "id": 20,
-      "question": "Which attribute is used to uniquely identify an HTML element?"
+      "question": "Which HTML tag is used to define list items?"
     },
     {
       "id": 21,
-      "question": "Which attribute is commonly used to apply styles or group elements together?"
+      "question": "Which HTML tag is used to display images?"
     },
     {
       "id": 22,
-      "question": "What does frontend development mainly focus on in web development?"
+      "question": "What is the purpose of the src attribute in an image tag?"
     },
     {
       "id": 23,
-      "question": "Which technologies are commonly used in frontend development?"
+      "question": "Why is the alt attribute important for images?"
     },
     {
       "id": 24,
-      "question": "What does backend development handle in a web application?"
+      "question": "Which HTML tags are used to create a table?"
     },
     {
       "id": 25,
-      "question": "Which part of a website communicates with the database, frontend or backend?"
+      "question": "What is the difference between <th> and <td> in a table?"
     },
     {
       "id": 26,
-      "question": "Which HTML tag is used to create a clickable link?"
+      "question": "Which HTML tag is used to define a table row?"
     },
     {
       "id": 27,
-      "question": "Which attribute is used to specify the destination of a link?"
+      "question": "Which HTML tag is used to create a form?"
     },
     {
       "id": 28,
-      "question": "What is the purpose of the <head> section in an HTML document?"
+      "question": "What is the purpose of the action attribute in a form?"
     },
     {
       "id": 29,
-      "question": "What is the purpose of the <body> tag in HTML?"
+      "question": "What does the method attribute in a form specify?"
     },
     {
       "id": 30,
-      "question": "Why is HTML considered a frontend technology and not a backend technology?"
+      "question": "Which HTML element is used to create input fields?"
+    },
+    {
+      "id": 31,
+      "question": "Name three common input types in HTML forms."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the placeholder attribute?"
+    },
+    {
+      "id": 33,
+      "question": "What does the required attribute do in a form input?"
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between name and id attributes in a form?"
+    },
+    {
+      "id": 35,
+      "question": "Which HTML tag is used to embed a video?"
+    },
+    {
+      "id": 36,
+      "question": "Which HTML tag is used to embed audio?"
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the controls attribute in media elements?"
+    },
+    {
+      "id": 38,
+      "question": "What is an iframe in HTML?"
+    },
+    {
+      "id": 39,
+      "question": "Which attribute is used to specify the URL in an iframe?"
+    },
+    {
+      "id": 40,
+      "question": "What are some common uses of iframes in web development?"
     }
   ]
 }
