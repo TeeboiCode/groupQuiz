@@ -522,4 +522,169 @@
     }
   ]
 }
+
+{
+  "questionsHTML": [
+    {
+      "id": 1,
+      "question": "What is HTML and what is its primary purpose in web development?"
+    },
+    {
+      "id": 2,
+      "question": "What does the acronym HTML stand for?"
+    },
+    {
+      "id": 3,
+      "question": "What is the basic structure of an HTML document?"
+    },
+    {
+      "id": 4,
+      "question": "Which HTML tag is used to define the root of an HTML document?"
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between the <head> and <body> sections?"
+    },
+    {
+      "id": 6,
+      "question": "What is an HTML element and what does it contain?"
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between a tag and an attribute in HTML?"
+    },
+    {
+      "id": 8,
+      "question": "Where are attributes placed inside an HTML element?"
+    },
+    {
+      "id": 9,
+      "question": "What is a meta tag and where is it placed in an HTML document?"
+    },
+    {
+      "id": 10,
+      "question": "Which meta tag is used to define the character encoding of a webpage?"
+    },
+    {
+      "id": 11,
+      "question": "Which HTML tags are used for headings?"
+    },
+    {
+      "id": 12,
+      "question": "What is the difference between <h1> and <h6> tags?"
+    },
+    {
+      "id": 13,
+      "question": "Which tag is used to create a paragraph in HTML?"
+    },
+    {
+      "id": 14,
+      "question": "What are semantic HTML elements?"
+    },
+    {
+      "id": 15,
+      "question": "Give examples of semantic HTML elements."
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between <div> and <span>?"
+    },
+    {
+      "id": 17,
+      "question": "What is the difference between block-level and inline elements?"
+    },
+    {
+      "id": 18,
+      "question": "Which HTML tag is used to create an unordered list?"
+    },
+    {
+      "id": 19,
+      "question": "Which HTML tag is used to create an ordered list?"
+    },
+    {
+      "id": 20,
+      "question": "Which HTML tag is used to define list items?"
+    },
+    {
+      "id": 21,
+      "question": "Which HTML tag is used to display images?"
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of the src attribute in an image tag?"
+    },
+    {
+      "id": 23,
+      "question": "Why is the alt attribute important for images?"
+    },
+    {
+      "id": 24,
+      "question": "Which HTML tags are used to create a table?"
+    },
+    {
+      "id": 25,
+      "question": "What is the difference between <th> and <td> in a table?"
+    },
+    {
+      "id": 26,
+      "question": "Which HTML tag is used to define a table row?"
+    },
+    {
+      "id": 27,
+      "question": "Which HTML tag is used to create a form?"
+    },
+    {
+      "id": 28,
+      "question": "What is the purpose of the action attribute in a form?"
+    },
+    {
+      "id": 29,
+      "question": "What does the method attribute in a form specify?"
+    },
+    {
+      "id": 30,
+      "question": "Which HTML element is used to create input fields?"
+    },
+    {
+      "id": 31,
+      "question": "Name three common input types in HTML forms."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the placeholder attribute?"
+    },
+    {
+      "id": 33,
+      "question": "What does the required attribute do in a form input?"
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between name and id attributes in a form?"
+    },
+    {
+      "id": 35,
+      "question": "Which HTML tag is used to embed a video?"
+    },
+    {
+      "id": 36,
+      "question": "Which HTML tag is used to embed audio?"
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the controls attribute in media elements?"
+    },
+    {
+      "id": 38,
+      "question": "What is an iframe in HTML?"
+    },
+    {
+      "id": 39,
+      "question": "Which attribute is used to specify the URL in an iframe?"
+    },
+    {
+      "id": 40,
+      "question": "What are some common uses of iframes in web development?"
+    }
+  ]
+}
  
