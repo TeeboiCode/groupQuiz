@@ -67,7 +67,7 @@ body::before {
 }
 .hero h1 {
   max-width: 650px; margin: 0; color: var(--navy); font-family: "Fredoka", sans-serif;
-  font-size: clamp(3.2rem, 6.4vw, 5.6rem); line-height: .98; letter-spacing: -.045em;
+  font-size: clamp(2.75rem, 5vw, 4.45rem); line-height: 1.02; letter-spacing: -.04em;
   overflow-wrap: anywhere;
 }
 .hero h1 span {
@@ -93,26 +93,26 @@ body::before {
   border-radius: 11px; background: #ffffff9c; font-size: .85rem;
 }
 
-.game-preview { position: relative; min-width: 0; min-height: 540px; display: grid; place-items: center; }
+.game-preview { position: relative; min-width: 0; min-height: 470px; display: grid; place-items: center; }
 .preview-card {
-  position: relative; z-index: 2; width: min(100%, 570px); padding: 26px; border: 1px solid #d5e2f3;
-  border-radius: 28px; background: #ffffffed; box-shadow: 0 35px 80px #294c7b25, 0 8px 24px #23486c12;
+  position: relative; z-index: 2; width: min(88%, 480px); padding: 20px; border: 1px solid #d5e2f3;
+  border-radius: 24px; background: #ffffffed; box-shadow: 0 30px 65px #294c7b25, 0 8px 24px #23486c12;
   transform: rotate(1.5deg); animation: cardFloat 5s ease-in-out infinite;
 }
 .preview-topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .preview-topbar > div:first-child { display: grid; gap: 4px; }
 .preview-label { color: var(--blue); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.preview-topbar strong { color: var(--navy); font-family: "Fredoka", sans-serif; font-size: 1.5rem; }
-.timer-pill { padding: 9px 12px; border-radius: 10px; color: #a44509; background: #fff1de; font-weight: 800; }
-.team-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin: 22px 0; }
+.preview-topbar strong { color: var(--navy); font-family: "Fredoka", sans-serif; font-size: 1.3rem; }
+.timer-pill { padding: 7px 10px; border-radius: 9px; color: #a44509; background: #fff1de; font-size: .86rem; font-weight: 800; }
+.team-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin: 17px 0; }
 .team-pill {
   position: relative; display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0;
-  padding: 10px 11px; border: 2px solid currentColor; border-radius: 12px; background: var(--white);
-  font-size: .75rem; font-weight: 800;
+  padding: 8px 9px; border: 2px solid currentColor; border-radius: 10px; background: var(--white);
+  font-size: .68rem; font-weight: 800;
 }
 .team-pill span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .team-pill strong {
-  display: grid; flex: 0 0 28px; place-items: center; width: 28px; height: 28px;
+  display: grid; flex: 0 0 24px; place-items: center; width: 24px; height: 24px;
   border-radius: 50%; color: var(--white); background: var(--team-color);
 }
 .team-blue { --team-color: var(--blue); color: var(--blue); }
@@ -124,9 +124,9 @@ body::before {
   position: absolute; top: -9px; right: 5px; padding: 2px 6px; border-radius: 20px;
   color: var(--white); background: #075b26; font-size: .55rem; text-transform: uppercase;
 }
-.challenge-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 11px; padding: 18px; border-radius: 18px; background: #edf5ff; }
+.challenge-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 14px; border-radius: 15px; background: #edf5ff; }
 .challenge-grid span {
-  display: grid; place-items: center; aspect-ratio: 1.25; border: 2px solid #cbdcf2; border-radius: 10px;
+  display: grid; place-items: center; aspect-ratio: 1.4; border: 2px solid #cbdcf2; border-radius: 9px;
   color: #33465d; background: var(--white); font-family: "Fredoka", sans-serif; font-weight: 600; box-shadow: 0 4px 9px #28496f10;
 }
 .challenge-grid .claimed { color: var(--white); opacity: .82; }
@@ -134,20 +134,20 @@ body::before {
 .challenge-grid .green { background: var(--green); border-color: var(--green); }
 .challenge-grid .orange { background: var(--orange); border-color: var(--orange); }
 .challenge-grid .selected { color: var(--blue); border-color: var(--blue); box-shadow: 0 0 0 4px #1268ed1d; animation: selectedPulse 1.7s ease-in-out infinite; }
-.preview-footer { display: flex; justify-content: space-between; margin-top: 17px; color: #66778b; font-size: .8rem; }
+.preview-footer { display: flex; justify-content: space-between; margin-top: 13px; color: #66778b; font-size: .74rem; }
 .preview-footer b { color: var(--navy); }
 
 .floating-card { position: absolute; z-index: 4; box-shadow: 0 16px 40px #162f521f; }
 .answer-float {
-  right: -12px; bottom: 72px; display: flex; align-items: center; gap: 11px; padding: 13px 17px;
+  right: 4px; bottom: 58px; display: flex; align-items: center; gap: 9px; padding: 10px 13px;
   border: 1px solid #bce6ca; border-radius: 16px; color: #125b2a; background: #f0fff5;
   transform: rotate(-4deg); animation: answerBounce 3.5s ease-in-out infinite;
 }
 .answer-float div { display: grid; } .answer-float small { color: #50845f; }
-.float-icon { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 50%; color: var(--white); background: var(--green); font-weight: 800; }
+.float-icon { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; color: var(--white); background: var(--green); font-weight: 800; }
 .trophy-float {
-  top: 58px; right: -9px; display: grid; place-items: center; width: 70px; height: 70px;
-  border: 1px solid #ffe599; border-radius: 20px; background: #fff8da; font-size: 2.25rem;
+  top: 48px; right: 5px; display: grid; place-items: center; width: 58px; height: 58px;
+  border: 1px solid #ffe599; border-radius: 18px; background: #fff8da; font-size: 1.85rem;
   transform: rotate(8deg); animation: trophyWiggle 4s ease-in-out infinite;
 }
 .question-float {
@@ -185,7 +185,7 @@ body::before {
   .brand span, .nav-status { display: none; }
   .brand img { width: 108px; }
   .hero { gap: 20px; padding: 30px 0 50px; }
-  .hero h1 { width: 100%; font-size: clamp(2.5rem, 11.5vw, 3.2rem); word-break: normal; }
+  .hero h1 { width: 100%; font-size: clamp(2.15rem, 9.5vw, 2.8rem); line-height: 1.05; word-break: normal; }
   .hero-actions { width: 100%; flex-direction: column; }
   .primary-cta { width: 100%; }
   .feature-list { width: 100%; }

@@ -28,6 +28,15 @@
         </div>
 
         <form id="setup-form">
+          <div class="question-set-field">
+            <label for="setup-question-set">Question set</label>
+            <select id="setup-question-set">
+              <option value="questions">Web Development</option>
+              <option value="alldepartmentQuestions">All Departments</option>
+            </select>
+            <small id="question-set-description">60 questions about HTML, CSS, and Bootstrap.</small>
+          </div>
+
           <div class="setup-section-heading">
             <div>
               <h2>Groups</h2>
@@ -89,6 +98,7 @@
       <!-- Question Box -->
       <div class="question-box" id="question-box" style="display: none">
         <h2 id="question-text"></h2>
+        <div id="question-options" class="question-options" aria-label="Answer options" hidden></div>
         <p class="countdown-label">
           Time Remaining: <span id="countdown">180</span> seconds
         </p>
