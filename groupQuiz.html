@@ -29,6 +29,14 @@
       </div>
 
       <!-- Question Grid -->
+      <div id="load-status" class="load-status">
+        <div role="status" aria-live="polite">
+          <h2 id="load-title">Loading challenges...</h2>
+          <p id="load-message">Your next challenge is on its way.</p>
+        </div>
+        <button id="retry-load" type="button" hidden>Try again</button>
+        <a id="load-home" href="index.html" hidden>Back to home</a>
+      </div>
       <div class="question-grid" id="question-grid"></div>
 
       <!-- Question Box -->
@@ -68,19 +76,58 @@
       let timer;
       let questionData = [];
 
-      fetch("/db.json")
-        .then((res) => res.json())
-        .then((data) => {
+      const loadStatus = document.getElementById("load-status");
+      const loadTitle = document.getElementById("load-title");
+      const loadMessage = document.getElementById("load-message");
+      const retryLoad = document.getElementById("retry-load");
+      const loadHome = document.getElementById("load-home");
+
+      function showLoadError(message, canRetry) {
+        loadTitle.textContent = "Challenges are unavailable";
+        loadMessage.textContent = message;
+        retryLoad.hidden = !canRetry;
+        loadHome.hidden = false;
+      }
+
+      async function loadQuestions() {
+        loadStatus.hidden = false;
+        loadTitle.textContent = "Loading challenges...";
+        loadMessage.textContent = "Your next challenge is on its way.";
+        retryLoad.hidden = true;
+        loadHome.hidden = true;
+        if (window.location.protocol === "file:") {
+          showLoadError("Please use the quiz website link shared by your host to play.", false);
+          return;
+        }
+
+        try {
+          const res = await fetch("./db.json");
+          if (!res.ok) {
+            throw new Error(`Unable to load db.json (HTTP ${res.status}).`);
+          }
+          const data = await res.json();
+          if (!Array.isArray(data.questions) || !data.questions.length ||
+              !data.questions.every((item) => item && typeof item.question === "string")) {
+            throw new Error("db.json must contain a non-empty questions array with question text.");
+          }
           questionData = shuffleArray(data.questions);
           renderGrid(questionData);
-        });
+          loadStatus.hidden = true;
+        } catch (error) {
+          console.error("Failed to load challenges:", error);
+          showLoadError("We couldn’t load the challenges. Please try again in a moment.", true);
+        }
+      }
+
+      retryLoad.onclick = loadQuestions;
+      loadQuestions();
 
       function shuffleArray(array) {
         return array.sort(() => Math.random() - 0.5);
       }
 
       function renderGrid(questions) {
-        for (let i = 1; i <= 60; i++) {
+        for (let i = 1; i <= questions.length; i++) {
           const btn = document.createElement("button");
           btn.className = "question-btn";
           btn.textContent = i;
