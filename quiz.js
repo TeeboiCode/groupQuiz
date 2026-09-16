@@ -1,5 +1,9 @@
 const STORAGE_KEY = "groupQuizGame";
 const DEFAULT_COLORS = ["#0a69ed", "#f97316", "#8b5cf6", "#e11d48", "#0891b2"];
+const QUESTION_SETS = {
+  questions: "Web Development",
+  alldepartmentQuestions: "All Departments",
+};
 
 const grid = document.getElementById("question-grid");
 const quizArea = document.getElementById("quiz-area");
@@ -8,10 +12,13 @@ const setupForm = document.getElementById("setup-form");
 const groupFields = document.getElementById("group-fields");
 const addGroupBtn = document.getElementById("add-group");
 const setupError = document.getElementById("setup-error");
+const questionSetSelect = document.getElementById("setup-question-set");
+const questionSetDescription = document.getElementById("question-set-description");
 const headerScoreboard = document.getElementById("header-scoreboard");
 const resetGameBtn = document.getElementById("reset-game");
 const questionBox = document.getElementById("question-box");
 const questionText = document.getElementById("question-text");
+const questionOptions = document.getElementById("question-options");
 const countdown = document.getElementById("countdown");
 const questionNumberEl = document.getElementById("current-question-number");
 const revealBtn = document.getElementById("show-answer");
@@ -29,13 +36,17 @@ const retryLoad = document.getElementById("retry-load");
 const loadHome = document.getElementById("load-home");
 
 let savedGame = readSavedGame();
-let config = isValidConfig(savedGame?.config) ? savedGame.config : null;
+const savedConfig = savedGame?.config
+  ? { ...savedGame.config, questionSet: savedGame.config.questionSet || "questions" }
+  : null;
+let config = isValidConfig(savedConfig) ? savedConfig : null;
 let scores = {};
 let activeGroupIndex = 0;
 let usedQuestionIds = new Set();
 let answeredByGroup = {};
 let questionOrder = [];
 let questionData = [];
+let questionCollections = null;
 let activeQuestion = null;
 let activeQuestionButton = null;
 let preparing = false;
@@ -78,7 +89,8 @@ function isValidConfig(value) {
       value.winningScore <= 100 &&
       Number.isInteger(value.pointValue) &&
       value.pointValue >= 1 &&
-      value.pointValue <= 20
+      value.pointValue <= 20 &&
+      Object.hasOwn(QUESTION_SETS, value.questionSet)
   );
 }
 
@@ -181,6 +193,12 @@ function updateSetupRows() {
 
 addGroupBtn.onclick = () => addGroupRow();
 
+questionSetSelect.onchange = () => {
+  questionSetDescription.textContent = questionSetSelect.value === "alldepartmentQuestions"
+    ? "60 multiple-choice questions covering roles and general technology."
+    : "60 questions about HTML, CSS, and Bootstrap.";
+};
+
 setupForm.onsubmit = (event) => {
   event.preventDefault();
   const rows = [...groupFields.querySelectorAll(".group-setup-row")];
@@ -200,7 +218,8 @@ setupForm.onsubmit = (event) => {
   const questionTime = Number(document.getElementById("setup-time").value);
   const winningScore = Number(document.getElementById("setup-winning-score").value);
   const pointValue = Number(document.getElementById("setup-point-value").value);
-  const nextConfig = { groups, questionTime, winningScore, pointValue };
+  const questionSet = questionSetSelect.value;
+  const nextConfig = { groups, questionTime, winningScore, pointValue, questionSet };
   if (!isValidConfig(nextConfig)) {
     return showSetupError("Check the game rules and use values within the allowed ranges.");
   }
@@ -209,7 +228,9 @@ setupForm.onsubmit = (event) => {
   scores = Object.fromEntries(groups.map((group) => [group.id, 0]));
   activeGroupIndex = 0;
   usedQuestionIds.clear();
-  questionOrder = questionData.map((question) => String(question.id));
+  answeredByGroup = {};
+  questionOrder = [];
+  if (questionCollections) prepareQuestionData();
   setupError.hidden = true;
   saveGame();
   showQuiz();
@@ -391,51 +412,71 @@ async function loadQuestions() {
     const response = await fetch("./db.json");
     if (!response.ok) throw new Error(`Unable to load db.json (HTTP ${response.status}).`);
     const data = await response.json();
-    if (
-      !Array.isArray(data.questions) ||
-      !data.questions.length ||
-      !data.questions.every(
-        (item) =>
-          item &&
-          item.id != null &&
-          ["question", "answer", "explanation"].every(
-            (key) => typeof item[key] === "string" && item[key].trim()
-          )
-      ) ||
-      new Set(data.questions.map((item) => String(item.id))).size !== data.questions.length
-    ) {
-      throw new Error("db.json must contain unique question IDs plus question, answer, and explanation text.");
+    questionCollections = {};
+    for (const key of Object.keys(QUESTION_SETS)) {
+      if (!isValidQuestionCollection(data[key], key === "alldepartmentQuestions")) {
+        throw new Error(`${QUESTION_SETS[key]} contains invalid question data.`);
+      }
+      questionCollections[key] = data[key];
     }
-
-    const questionsById = new Map(
-      data.questions.map((question) => [String(question.id), question])
-    );
-    const savedQuestions = questionOrder
-      .filter((id) => questionsById.has(id))
-      .map((id) => questionsById.get(id));
-    const savedIds = new Set(savedQuestions.map((question) => String(question.id)));
-    const newQuestions = shuffleArray(
-      data.questions.filter((question) => !savedIds.has(String(question.id)))
-    );
-    questionData = [...savedQuestions, ...newQuestions];
-    questionOrder = questionData.map((question) => String(question.id));
-    usedQuestionIds = new Set(
-      [...usedQuestionIds].filter((id) => questionsById.has(id))
-    );
-    const validGroupIds = new Set(config?.groups.map((group) => group.id) || []);
-    answeredByGroup = Object.fromEntries(
-      Object.entries(answeredByGroup).filter(
-        ([questionId, groupId]) =>
-          questionsById.has(questionId) && validGroupIds.has(groupId)
-      )
-    );
-    if (config) saveGame();
-    renderGrid(questionData);
+    if (config) prepareQuestionData();
     loadStatus.hidden = true;
   } catch (error) {
     console.error("Failed to load challenges:", error);
     showLoadError("We couldn’t load the challenges. Please try again in a moment.", true);
   }
+}
+
+function isValidQuestionCollection(collection, requiresOptions) {
+  return Boolean(
+    Array.isArray(collection) &&
+      collection.length &&
+      collection.every(
+        (item) =>
+          item &&
+          item.id != null &&
+          ["question", "answer", "explanation"].every(
+            (key) => typeof item[key] === "string" && item[key].trim()
+          ) &&
+          (!requiresOptions ||
+            (Array.isArray(item.options) &&
+              item.options.length === 4 &&
+              item.options.every(
+                (option) => option && typeof option.label === "string" && typeof option.text === "string"
+              ) &&
+              typeof item.correctOption === "string"))
+      ) &&
+      new Set(collection.map((item) => String(item.id))).size === collection.length
+  );
+}
+
+function prepareQuestionData() {
+  const selectedQuestions = questionCollections?.[config.questionSet];
+  if (!selectedQuestions) return;
+  const questionsById = new Map(
+    selectedQuestions.map((question) => [String(question.id), question])
+  );
+  const savedQuestions = questionOrder
+    .filter((id) => questionsById.has(id))
+    .map((id) => questionsById.get(id));
+  const savedIds = new Set(savedQuestions.map((question) => String(question.id)));
+  const newQuestions = shuffleArray(
+    selectedQuestions.filter((question) => !savedIds.has(String(question.id)))
+  );
+  questionData = [...savedQuestions, ...newQuestions];
+  questionOrder = questionData.map((question) => String(question.id));
+  usedQuestionIds = new Set(
+    [...usedQuestionIds].filter((id) => questionsById.has(id))
+  );
+  const validGroupIds = new Set(config.groups.map((group) => group.id));
+  answeredByGroup = Object.fromEntries(
+    Object.entries(answeredByGroup).filter(
+      ([questionId, groupId]) =>
+        questionsById.has(questionId) && validGroupIds.has(groupId)
+    )
+  );
+  saveGame();
+  renderGrid(questionData);
 }
 
 function shuffleArray(array) {
@@ -467,6 +508,33 @@ function applyAnsweredStyle(button, group) {
   button.setAttribute("aria-label", `Challenge ${button.textContent}, answered by ${group.name}`);
 }
 
+function renderQuestionOptions(question) {
+  questionOptions.replaceChildren();
+  if (!Array.isArray(question.options) || !question.options.length) {
+    questionOptions.hidden = true;
+    return;
+  }
+  question.options.forEach((option) => {
+    const item = document.createElement("div");
+    item.className = "question-option";
+    item.dataset.option = option.label;
+    const label = document.createElement("strong");
+    label.textContent = option.label;
+    const text = document.createElement("span");
+    text.textContent = option.text;
+    item.append(label, text);
+    questionOptions.appendChild(item);
+  });
+  questionOptions.hidden = false;
+}
+
+function revealCorrectOption(question) {
+  if (!question.correctOption) return;
+  [...questionOptions.children].forEach((option) => {
+    option.classList.toggle("correct", option.dataset.option === question.correctOption);
+  });
+}
+
 function handleQuestionClick(button) {
   const index = button.dataset.index;
   const question = questionData[index];
@@ -490,6 +558,7 @@ function handleQuestionClick(button) {
   roundStatus.textContent = `${activeGroup().name}, discuss your answer before revealing it.`;
   questionNumberEl.textContent = Number(index) + 1;
   questionText.textContent = question.question;
+  renderQuestionOptions(question);
 
   showPreloader(() => {
     preparing = false;
@@ -538,6 +607,7 @@ revealBtn.onclick = () => {
   clearInterval(timer);
   document.getElementById("answer-text").textContent = activeQuestion.answer;
   document.getElementById("answer-explanation").textContent = activeQuestion.explanation;
+  revealCorrectOption(activeQuestion);
   answerPanel.hidden = false;
   gradingControls.hidden = false;
   gradingGroup.textContent = activeGroup().name;

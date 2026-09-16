@@ -360,5 +360,1507 @@
       "answer": "It provides ready-made layouts, utilities, and components.",
       "explanation": "Developers can assemble common interface patterns quickly and customize them instead of writing every style and behavior from scratch."
     }
+  ],
+  "alldepartmentQuestions": [
+    {
+      "id": 1,
+      "question": "The head of the overall technical/engineering team in a company is usually called the:",
+      "options": [
+        {
+          "label": "A",
+          "text": "CEO"
+        },
+        {
+          "label": "B",
+          "text": "CTO"
+        },
+        {
+          "label": "C",
+          "text": "CFO"
+        },
+        {
+          "label": "D",
+          "text": "CMO"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "CTO (Chief Technology Officer)",
+      "explanation": "The correct answer is B) CTO (Chief Technology Officer)."
+    },
+    {
+      "id": 2,
+      "question": "The person responsible for the company’s information security strategy is the:",
+      "options": [
+        {
+          "label": "A",
+          "text": "CIO"
+        },
+        {
+          "label": "B",
+          "text": "CISO"
+        },
+        {
+          "label": "C",
+          "text": "CTO"
+        },
+        {
+          "label": "D",
+          "text": "COO"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "CISO (Chief Information Security Officer)",
+      "explanation": "The correct answer is B) CISO (Chief Information Security Officer)."
+    },
+    {
+      "id": 3,
+      "question": "Who typically leads the design of user interfaces and user experiences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Frontend Developer"
+        },
+        {
+          "label": "B",
+          "text": "UI/UX Designer"
+        },
+        {
+          "label": "C",
+          "text": "Data Analyst"
+        },
+        {
+          "label": "D",
+          "text": "Backend Developer"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "UI/UX Designer",
+      "explanation": "The correct answer is B) UI/UX Designer."
+    },
+    {
+      "id": 4,
+      "question": "The professional who builds the visual and interactive parts of websites/apps that users see is a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Backend Developer"
+        },
+        {
+          "label": "B",
+          "text": "Frontend Developer"
+        },
+        {
+          "label": "C",
+          "text": "Database Administrator"
+        },
+        {
+          "label": "D",
+          "text": "Network Engineer"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Frontend Developer",
+      "explanation": "The correct answer is B) Frontend Developer."
+    },
+    {
+      "id": 5,
+      "question": "A person who analyzes data to find patterns and insights for business decisions is a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cybersecurity Analyst"
+        },
+        {
+          "label": "B",
+          "text": "Data Analyst"
+        },
+        {
+          "label": "C",
+          "text": "UI Designer"
+        },
+        {
+          "label": "D",
+          "text": "System Administrator"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Data Analyst",
+      "explanation": "The correct answer is B) Data Analyst."
+    },
+    {
+      "id": 6,
+      "question": "Who is primarily responsible for protecting systems, networks, and data from cyber threats?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Data Scientist"
+        },
+        {
+          "label": "B",
+          "text": "Cybersecurity Specialist/Analyst"
+        },
+        {
+          "label": "C",
+          "text": "Frontend Developer"
+        },
+        {
+          "label": "D",
+          "text": "Product Manager"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Cybersecurity Specialist/Analyst",
+      "explanation": "The correct answer is B) Cybersecurity Specialist/Analyst."
+    },
+    {
+      "id": 7,
+      "question": "The Chief Information Officer (CIO) mainly focuses on:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Marketing strategies"
+        },
+        {
+          "label": "B",
+          "text": "Overall IT strategy and systems"
+        },
+        {
+          "label": "C",
+          "text": "Financial reporting"
+        },
+        {
+          "label": "D",
+          "text": "Product design"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Overall IT strategy and systems",
+      "explanation": "The correct answer is B) Overall IT strategy and systems."
+    },
+    {
+      "id": 8,
+      "question": "Who usually manages the product vision, roadmap, and prioritization of features?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CTO"
+        },
+        {
+          "label": "B",
+          "text": "Product Manager"
+        },
+        {
+          "label": "C",
+          "text": "UI/UX Designer"
+        },
+        {
+          "label": "D",
+          "text": "DevOps Engineer"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Product Manager",
+      "explanation": "The correct answer is B) Product Manager."
+    },
+    {
+      "id": 9,
+      "question": "A Backend Developer primarily works on:",
+      "options": [
+        {
+          "label": "A",
+          "text": "What the user sees and interacts with"
+        },
+        {
+          "label": "B",
+          "text": "Server-side logic, databases, and APIs"
+        },
+        {
+          "label": "C",
+          "text": "Visual design and wireframes"
+        },
+        {
+          "label": "D",
+          "text": "Network security policies"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Server-side logic, databases, and APIs",
+      "explanation": "The correct answer is B) Server-side logic, databases, and APIs."
+    },
+    {
+      "id": 10,
+      "question": "The role that bridges design and development by creating wireframes, prototypes, and user flows is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Data Analyst"
+        },
+        {
+          "label": "B",
+          "text": "UI/UX Designer"
+        },
+        {
+          "label": "C",
+          "text": "Cybersecurity Analyst"
+        },
+        {
+          "label": "D",
+          "text": "System Administrator"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "UI/UX Designer",
+      "explanation": "The correct answer is B) UI/UX Designer."
+    },
+    {
+      "id": 11,
+      "question": "Who is responsible for ensuring software is secure throughout the development lifecycle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Frontend Developer only"
+        },
+        {
+          "label": "B",
+          "text": "Security Engineer / Application Security Specialist"
+        },
+        {
+          "label": "C",
+          "text": "Data Analyst"
+        },
+        {
+          "label": "D",
+          "text": "Marketing Manager"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Security Engineer / Application Security Specialist",
+      "explanation": "The correct answer is B) Security Engineer / Application Security Specialist."
+    },
+    {
+      "id": 12,
+      "question": "In many tech companies, the person who oversees both technology and product strategy at the highest level is the:",
+      "options": [
+        {
+          "label": "A",
+          "text": "CFO"
+        },
+        {
+          "label": "B",
+          "text": "CTO or CPO (Chief Product Officer)"
+        },
+        {
+          "label": "C",
+          "text": "HR Manager"
+        },
+        {
+          "label": "D",
+          "text": "Sales Director"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "CTO or CPO (Chief Product Officer)",
+      "explanation": "The correct answer is B) CTO or CPO (Chief Product Officer)."
+    },
+    {
+      "id": 13,
+      "question": "A DevOps Engineer mainly focuses on:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Designing user interfaces"
+        },
+        {
+          "label": "B",
+          "text": "Bridging development and operations (CI/CD, infrastructure)"
+        },
+        {
+          "label": "C",
+          "text": "Analyzing customer data"
+        },
+        {
+          "label": "D",
+          "text": "Writing marketing content"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Bridging development and operations (CI/CD, infrastructure)",
+      "explanation": "The correct answer is B) Bridging development and operations (CI/CD, infrastructure)."
+    },
+    {
+      "id": 14,
+      "question": "Who typically creates dashboards and reports from large datasets?",
+      "options": [
+        {
+          "label": "A",
+          "text": "UI Designer"
+        },
+        {
+          "label": "B",
+          "text": "Data Analyst / Business Intelligence Analyst"
+        },
+        {
+          "label": "C",
+          "text": "Frontend Developer"
+        },
+        {
+          "label": "D",
+          "text": "Network Administrator"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Data Analyst / Business Intelligence Analyst",
+      "explanation": "The correct answer is B) Data Analyst / Business Intelligence Analyst."
+    },
+    {
+      "id": 15,
+      "question": "The role responsible for ethical hacking and finding vulnerabilities before attackers do is often called a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Penetration Tester / Ethical Hacker"
+        },
+        {
+          "label": "B",
+          "text": "UI/UX Designer"
+        },
+        {
+          "label": "C",
+          "text": "Data Scientist"
+        },
+        {
+          "label": "D",
+          "text": "Frontend Developer"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Penetration Tester / Ethical Hacker",
+      "explanation": "The correct answer is A) Penetration Tester / Ethical Hacker."
+    },
+    {
+      "id": 16,
+      "question": "What does CPU stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Central Processing Unit"
+        },
+        {
+          "label": "B",
+          "text": "Computer Personal Unit"
+        },
+        {
+          "label": "C",
+          "text": "Central Program Utility"
+        },
+        {
+          "label": "D",
+          "text": "Control Processing Unit"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Central Processing Unit",
+      "explanation": "The correct answer is A) Central Processing Unit."
+    },
+    {
+      "id": 17,
+      "question": "RAM is a type of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Permanent storage"
+        },
+        {
+          "label": "B",
+          "text": "Temporary (volatile) memory"
+        },
+        {
+          "label": "C",
+          "text": "Input device"
+        },
+        {
+          "label": "D",
+          "text": "Output device"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Temporary (volatile) memory",
+      "explanation": "The correct answer is B) Temporary (volatile) memory."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is an operating system?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Microsoft Word"
+        },
+        {
+          "label": "B",
+          "text": "Google Chrome"
+        },
+        {
+          "label": "C",
+          "text": "Windows / Linux / macOS"
+        },
+        {
+          "label": "D",
+          "text": "Adobe Photoshop"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Windows / Linux / macOS",
+      "explanation": "The correct answer is C) Windows / Linux / macOS."
+    },
+    {
+      "id": 19,
+      "question": "The main function of an operating system is to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Design websites"
+        },
+        {
+          "label": "B",
+          "text": "Manage hardware and software resources"
+        },
+        {
+          "label": "C",
+          "text": "Create databases"
+        },
+        {
+          "label": "D",
+          "text": "Write code"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Manage hardware and software resources",
+      "explanation": "The correct answer is B) Manage hardware and software resources."
+    },
+    {
+      "id": 20,
+      "question": "What does HTTP stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HyperText Transfer Protocol"
+        },
+        {
+          "label": "B",
+          "text": "High Transfer Text Protocol"
+        },
+        {
+          "label": "C",
+          "text": "Hyperlink Text Transmission Process"
+        },
+        {
+          "label": "D",
+          "text": "Home Tool Transfer Protocol"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "HyperText Transfer Protocol",
+      "explanation": "The correct answer is A) HyperText Transfer Protocol."
+    },
+    {
+      "id": 21,
+      "question": "A firewall is primarily used for:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Speeding up internet"
+        },
+        {
+          "label": "B",
+          "text": "Protecting a network from unauthorized access"
+        },
+        {
+          "label": "C",
+          "text": "Designing user interfaces"
+        },
+        {
+          "label": "D",
+          "text": "Storing data"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Protecting a network from unauthorized access",
+      "explanation": "The correct answer is B) Protecting a network from unauthorized access."
+    },
+    {
+      "id": 22,
+      "question": "What is the binary number system based on?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0 and 1"
+        },
+        {
+          "label": "B",
+          "text": "0 to 9"
+        },
+        {
+          "label": "C",
+          "text": "A to F"
+        },
+        {
+          "label": "D",
+          "text": "1 to 10"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "0 and 1",
+      "explanation": "The correct answer is A) 0 and 1."
+    },
+    {
+      "id": 23,
+      "question": "Cloud computing means:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Storing data only on local hard drives"
+        },
+        {
+          "label": "B",
+          "text": "Delivering computing services over the internet"
+        },
+        {
+          "label": "C",
+          "text": "Designing mobile apps only"
+        },
+        {
+          "label": "D",
+          "text": "Building physical servers"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Delivering computing services over the internet",
+      "explanation": "The correct answer is B) Delivering computing services over the internet."
+    },
+    {
+      "id": 24,
+      "question": "Which of these is a programming language commonly used in frontend development?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Python only"
+        },
+        {
+          "label": "B",
+          "text": "JavaScript"
+        },
+        {
+          "label": "C",
+          "text": "SQL only"
+        },
+        {
+          "label": "D",
+          "text": "Assembly"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "JavaScript",
+      "explanation": "The correct answer is B) JavaScript."
+    },
+    {
+      "id": 25,
+      "question": "HTML is mainly used for:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Styling web pages"
+        },
+        {
+          "label": "B",
+          "text": "Structuring the content of web pages"
+        },
+        {
+          "label": "C",
+          "text": "Adding interactivity"
+        },
+        {
+          "label": "D",
+          "text": "Database management"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Structuring the content of web pages",
+      "explanation": "The correct answer is B) Structuring the content of web pages."
+    },
+    {
+      "id": 26,
+      "question": "CSS is primarily used for:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Creating databases"
+        },
+        {
+          "label": "B",
+          "text": "Styling and layout of web pages"
+        },
+        {
+          "label": "C",
+          "text": "Writing server logic"
+        },
+        {
+          "label": "D",
+          "text": "Network security"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Styling and layout of web pages",
+      "explanation": "The correct answer is B) Styling and layout of web pages."
+    },
+    {
+      "id": 27,
+      "question": "What does API stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Application Programming Interface"
+        },
+        {
+          "label": "B",
+          "text": "Advanced Program Integration"
+        },
+        {
+          "label": "C",
+          "text": "Automated Processing Interface"
+        },
+        {
+          "label": "D",
+          "text": "Application Process Input"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Application Programming Interface",
+      "explanation": "The correct answer is A) Application Programming Interface."
+    },
+    {
+      "id": 28,
+      "question": "A database is used to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Design user interfaces"
+        },
+        {
+          "label": "B",
+          "text": "Store and organize data systematically"
+        },
+        {
+          "label": "C",
+          "text": "Create animations"
+        },
+        {
+          "label": "D",
+          "text": "Protect against viruses"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Store and organize data systematically",
+      "explanation": "The correct answer is B) Store and organize data systematically."
+    },
+    {
+      "id": 29,
+      "question": "Which of the following is an example of open-source software?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Microsoft Windows (proprietary)"
+        },
+        {
+          "label": "B",
+          "text": "Linux"
+        },
+        {
+          "label": "C",
+          "text": "Adobe Photoshop (proprietary)"
+        },
+        {
+          "label": "D",
+          "text": "Microsoft Office (proprietary)"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Linux",
+      "explanation": "The correct answer is B) Linux."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of version control systems like Git?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To design websites"
+        },
+        {
+          "label": "B",
+          "text": "To track changes in code and collaborate"
+        },
+        {
+          "label": "C",
+          "text": "To analyze data"
+        },
+        {
+          "label": "D",
+          "text": "To secure networks"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "To track changes in code and collaborate",
+      "explanation": "The correct answer is B) To track changes in code and collaborate."
+    },
+    {
+      "id": 31,
+      "question": "Phishing is a type of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hardware failure"
+        },
+        {
+          "label": "B",
+          "text": "Cyber attack that tricks users into revealing information"
+        },
+        {
+          "label": "C",
+          "text": "Programming language"
+        },
+        {
+          "label": "D",
+          "text": "Design tool"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Cyber attack that tricks users into revealing information",
+      "explanation": "The correct answer is B) Cyber attack that tricks users into revealing information."
+    },
+    {
+      "id": 32,
+      "question": "Encryption is used to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Speed up computers"
+        },
+        {
+          "label": "B",
+          "text": "Convert data into a secure format that only authorized parties can read"
+        },
+        {
+          "label": "C",
+          "text": "Design better UIs"
+        },
+        {
+          "label": "D",
+          "text": "Store large files"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Convert data into a secure format that only authorized parties can read",
+      "explanation": "The correct answer is B) Convert data into a secure format that only authorized parties can read."
+    },
+    {
+      "id": 33,
+      "question": "What does UI stand for in design?",
+      "options": [
+        {
+          "label": "A",
+          "text": "User Intelligence"
+        },
+        {
+          "label": "B",
+          "text": "User Interface"
+        },
+        {
+          "label": "C",
+          "text": "Universal Input"
+        },
+        {
+          "label": "D",
+          "text": "Unique Interaction"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "User Interface",
+      "explanation": "The correct answer is B) User Interface."
+    },
+    {
+      "id": 34,
+      "question": "What does UX stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "User Experience"
+        },
+        {
+          "label": "B",
+          "text": "Universal Experience"
+        },
+        {
+          "label": "C",
+          "text": "User Extension"
+        },
+        {
+          "label": "D",
+          "text": "Unique Execution"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "User Experience",
+      "explanation": "The correct answer is A) User Experience."
+    },
+    {
+      "id": 35,
+      "question": "A responsive website is one that:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only works on desktop"
+        },
+        {
+          "label": "B",
+          "text": "Adapts its layout to different screen sizes"
+        },
+        {
+          "label": "C",
+          "text": "Has no images"
+        },
+        {
+          "label": "D",
+          "text": "Requires special software"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Adapts its layout to different screen sizes",
+      "explanation": "The correct answer is B) Adapts its layout to different screen sizes."
+    },
+    {
+      "id": 36,
+      "question": "Which tool is commonly used by UI/UX designers for prototyping?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Excel only"
+        },
+        {
+          "label": "B",
+          "text": "Figma / Adobe XD / Sketch"
+        },
+        {
+          "label": "C",
+          "text": "MySQL"
+        },
+        {
+          "label": "D",
+          "text": "Wireshark"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Figma / Adobe XD / Sketch",
+      "explanation": "The correct answer is B) Figma / Adobe XD / Sketch."
+    },
+    {
+      "id": 37,
+      "question": "SQL is mainly used for:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Styling web pages"
+        },
+        {
+          "label": "B",
+          "text": "Querying and managing databases"
+        },
+        {
+          "label": "C",
+          "text": "Creating animations"
+        },
+        {
+          "label": "D",
+          "text": "Network configuration"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Querying and managing databases",
+      "explanation": "The correct answer is B) Querying and managing databases."
+    },
+    {
+      "id": 38,
+      "question": "What is the main goal of a Data Analyst in a company?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Build the frontend of the website"
+        },
+        {
+          "label": "B",
+          "text": "Turn raw data into actionable insights"
+        },
+        {
+          "label": "C",
+          "text": "Design logos"
+        },
+        {
+          "label": "D",
+          "text": "Configure firewalls"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Turn raw data into actionable insights",
+      "explanation": "The correct answer is B) Turn raw data into actionable insights."
+    },
+    {
+      "id": 39,
+      "question": "Two-factor authentication (2FA) improves security by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using only a password"
+        },
+        {
+          "label": "B",
+          "text": "Requiring two different forms of verification"
+        },
+        {
+          "label": "C",
+          "text": "Slowing down login"
+        },
+        {
+          "label": "D",
+          "text": "Removing all passwords"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Requiring two different forms of verification",
+      "explanation": "The correct answer is B) Requiring two different forms of verification."
+    },
+    {
+      "id": 40,
+      "question": "Who is most likely to create wireframes and user journey maps?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cybersecurity Analyst"
+        },
+        {
+          "label": "B",
+          "text": "UI/UX Designer"
+        },
+        {
+          "label": "C",
+          "text": "Backend Developer"
+        },
+        {
+          "label": "D",
+          "text": "Network Engineer"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "UI/UX Designer",
+      "explanation": "The correct answer is B) UI/UX Designer."
+    },
+    {
+      "id": 41,
+      "question": "The Internet of Things (IoT) refers to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only computers connected to the internet"
+        },
+        {
+          "label": "B",
+          "text": "Everyday physical devices connected to the internet"
+        },
+        {
+          "label": "C",
+          "text": "Social media platforms"
+        },
+        {
+          "label": "D",
+          "text": "Programming languages"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Everyday physical devices connected to the internet",
+      "explanation": "The correct answer is B) Everyday physical devices connected to the internet."
+    },
+    {
+      "id": 42,
+      "question": "A malware is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A type of hardware"
+        },
+        {
+          "label": "B",
+          "text": "Malicious software designed to harm systems"
+        },
+        {
+          "label": "C",
+          "text": "A design software"
+        },
+        {
+          "label": "D",
+          "text": "A database tool"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Malicious software designed to harm systems",
+      "explanation": "The correct answer is B) Malicious software designed to harm systems."
+    },
+    {
+      "id": 43,
+      "question": "In frontend development, a framework like React or Vue is used to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Manage databases"
+        },
+        {
+          "label": "B",
+          "text": "Build interactive user interfaces more efficiently"
+        },
+        {
+          "label": "C",
+          "text": "Secure networks"
+        },
+        {
+          "label": "D",
+          "text": "Analyze big data"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Build interactive user interfaces more efficiently",
+      "explanation": "The correct answer is B) Build interactive user interfaces more efficiently."
+    },
+    {
+      "id": 44,
+      "question": "Big Data typically refers to data that is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Very small and simple"
+        },
+        {
+          "label": "B",
+          "text": "Extremely large, complex, and growing rapidly"
+        },
+        {
+          "label": "C",
+          "text": "Only stored on paper"
+        },
+        {
+          "label": "D",
+          "text": "Used only for design"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Extremely large, complex, and growing rapidly",
+      "explanation": "The correct answer is B) Extremely large, complex, and growing rapidly."
+    },
+    {
+      "id": 45,
+      "question": "Who would most likely investigate a data breach in a company?",
+      "options": [
+        {
+          "label": "A",
+          "text": "UI Designer"
+        },
+        {
+          "label": "B",
+          "text": "Cybersecurity team / Incident Response team"
+        },
+        {
+          "label": "C",
+          "text": "Frontend Developer"
+        },
+        {
+          "label": "D",
+          "text": "Marketing team"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Cybersecurity team / Incident Response team",
+      "explanation": "The correct answer is B) Cybersecurity team / Incident Response team."
+    },
+    {
+      "id": 46,
+      "question": "Accessibility (a11y) in web design means:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Making websites beautiful only"
+        },
+        {
+          "label": "B",
+          "text": "Making digital products usable by people with disabilities"
+        },
+        {
+          "label": "C",
+          "text": "Making websites load slower"
+        },
+        {
+          "label": "D",
+          "text": "Using only dark mode"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Making digital products usable by people with disabilities",
+      "explanation": "The correct answer is B) Making digital products usable by people with disabilities."
+    },
+    {
+      "id": 47,
+      "question": "What does SaaS stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Software as a Service"
+        },
+        {
+          "label": "B",
+          "text": "System as a Software"
+        },
+        {
+          "label": "C",
+          "text": "Security as a Service"
+        },
+        {
+          "label": "D",
+          "text": "Storage as a System"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Software as a Service",
+      "explanation": "The correct answer is A) Software as a Service."
+    },
+    {
+      "id": 48,
+      "question": "A cache is used to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Permanently delete data"
+        },
+        {
+          "label": "B",
+          "text": "Store frequently used data for faster access"
+        },
+        {
+          "label": "C",
+          "text": "Design interfaces"
+        },
+        {
+          "label": "D",
+          "text": "Encrypt passwords"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Store frequently used data for faster access",
+      "explanation": "The correct answer is B) Store frequently used data for faster access."
+    },
+    {
+      "id": 49,
+      "question": "Who is responsible for making sure a product is both useful and delightful to users?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the CEO"
+        },
+        {
+          "label": "B",
+          "text": "UI/UX Designer (in collaboration with product and engineering)"
+        },
+        {
+          "label": "C",
+          "text": "Only the Data Analyst"
+        },
+        {
+          "label": "D",
+          "text": "Only the Security team"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "UI/UX Designer (in collaboration with product and engineering)",
+      "explanation": "The correct answer is B) UI/UX Designer (in collaboration with product and engineering)."
+    },
+    {
+      "id": 50,
+      "question": "Machine Learning is a subset of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cybersecurity only"
+        },
+        {
+          "label": "B",
+          "text": "Artificial Intelligence"
+        },
+        {
+          "label": "C",
+          "text": "Frontend development"
+        },
+        {
+          "label": "D",
+          "text": "Graphic design"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Artificial Intelligence",
+      "explanation": "The correct answer is B) Artificial Intelligence."
+    },
+    {
+      "id": 51,
+      "question": "The person who ensures that the company’s technology aligns with business goals at the highest level is often the:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Junior Developer"
+        },
+        {
+          "label": "B",
+          "text": "CTO"
+        },
+        {
+          "label": "C",
+          "text": "Intern"
+        },
+        {
+          "label": "D",
+          "text": "Graphic Designer"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "CTO",
+      "explanation": "The correct answer is B) CTO."
+    },
+    {
+      "id": 52,
+      "question": "Which of these is a common soft skill needed across Frontend, Data Analytics, Cybersecurity, and UI/UX?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only coding"
+        },
+        {
+          "label": "B",
+          "text": "Problem-solving and communication"
+        },
+        {
+          "label": "C",
+          "text": "Only drawing"
+        },
+        {
+          "label": "D",
+          "text": "Only math"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Problem-solving and communication",
+      "explanation": "The correct answer is B) Problem-solving and communication."
+    },
+    {
+      "id": 53,
+      "question": "GitHub is mainly used for:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Designing logos"
+        },
+        {
+          "label": "B",
+          "text": "Hosting and collaborating on code repositories"
+        },
+        {
+          "label": "C",
+          "text": "Analyzing sales data"
+        },
+        {
+          "label": "D",
+          "text": "Creating firewalls"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Hosting and collaborating on code repositories",
+      "explanation": "The correct answer is B) Hosting and collaborating on code repositories."
+    },
+    {
+      "id": 54,
+      "question": "A VPN is used to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Design websites"
+        },
+        {
+          "label": "B",
+          "text": "Create a secure, encrypted connection over the internet"
+        },
+        {
+          "label": "C",
+          "text": "Store large files"
+        },
+        {
+          "label": "D",
+          "text": "Write JavaScript"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Create a secure, encrypted connection over the internet",
+      "explanation": "The correct answer is B) Create a secure, encrypted connection over the internet."
+    },
+    {
+      "id": 55,
+      "question": "In a tech company, who usually works closely with both designers and backend developers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the CEO"
+        },
+        {
+          "label": "B",
+          "text": "Frontend Developer"
+        },
+        {
+          "label": "C",
+          "text": "Only the Accountant"
+        },
+        {
+          "label": "D",
+          "text": "Only the HR Manager"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Frontend Developer",
+      "explanation": "The correct answer is B) Frontend Developer."
+    },
+    {
+      "id": 56,
+      "question": "Data visualization tools (like Tableau or Power BI) are mainly used by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Network Engineers"
+        },
+        {
+          "label": "B",
+          "text": "Data Analysts"
+        },
+        {
+          "label": "C",
+          "text": "Hardware Technicians"
+        },
+        {
+          "label": "D",
+          "text": "Security Guards"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Data Analysts",
+      "explanation": "The correct answer is B) Data Analysts."
+    },
+    {
+      "id": 57,
+      "question": "The practice of testing a system’s security by simulating attacks is called:",
+      "options": [
+        {
+          "label": "A",
+          "text": "UI Testing"
+        },
+        {
+          "label": "B",
+          "text": "Penetration Testing"
+        },
+        {
+          "label": "C",
+          "text": "A/B Testing"
+        },
+        {
+          "label": "D",
+          "text": "Unit Testing"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Penetration Testing",
+      "explanation": "The correct answer is B) Penetration Testing."
+    },
+    {
+      "id": 58,
+      "question": "Who is most concerned with color contrast, typography, and layout for usability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Database Administrator"
+        },
+        {
+          "label": "B",
+          "text": "UI/UX Designer"
+        },
+        {
+          "label": "C",
+          "text": "Network Specialist"
+        },
+        {
+          "label": "D",
+          "text": "Cloud Engineer"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "UI/UX Designer",
+      "explanation": "The correct answer is B) UI/UX Designer."
+    },
+    {
+      "id": 59,
+      "question": "An IP address is used to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Style web pages"
+        },
+        {
+          "label": "B",
+          "text": "Uniquely identify a device on a network"
+        },
+        {
+          "label": "C",
+          "text": "Encrypt files only"
+        },
+        {
+          "label": "D",
+          "text": "Design logos"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Uniquely identify a device on a network",
+      "explanation": "The correct answer is B) Uniquely identify a device on a network."
+    },
+    {
+      "id": 60,
+      "question": "In most tech organizations, collaboration between Frontend Developers, UI/UX Designers, Data Analysts, and Cybersecurity teams is important because:",
+      "options": [
+        {
+          "label": "A",
+          "text": "They work in complete isolation"
+        },
+        {
+          "label": "B",
+          "text": "Modern products require design, functionality, data insights, and security"
+        },
+        {
+          "label": "C",
+          "text": "Only one role is needed"
+        },
+        {
+          "label": "D",
+          "text": "Security is not important"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Modern products require design, functionality, data insights, and security",
+      "explanation": "The correct answer is B) Modern products require design, functionality, data insights, and security."
+    }
   ]
 }

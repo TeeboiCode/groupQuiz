@@ -22,7 +22,9 @@ Bootstrap answers use the default Bootstrap 5 conventions. Reference: https://ge
 
 ## Scoring flow
 
-Before the quiz, the host creates 2 to 5 groups and chooses each group’s name and color. The setup also controls the question timer, winning score, and points awarded for a correct answer. Turns rotate through every group after each graded answer. The active group has a green card in the top navigation.
+Before the quiz, the host chooses either **Web Development** or **All Departments**, creates 2 to 5 groups, and chooses each group’s name and color. The setup also controls the question timer, winning score, and points awarded for a correct answer. Turns rotate through every group after each graded answer. The active group has a green card in the top navigation.
+
+All Departments questions display four multiple-choice options. Revealing the answer highlights the correct option before the host grades the group. Web Development questions keep the original question-and-answer layout.
 
 Each grading decision opens a score notification for five seconds. The setup, scores, current turn, shuffled question order, and completed questions are saved in local storage and survive a refresh. Use **New setup** to clear the complete game and return to group setup.
 
