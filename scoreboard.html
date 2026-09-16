@@ -81,10 +81,8 @@
       <div class="question-box" style="max-width: 300px">
         <h2>Group A</h2>
         <p>Score: <strong id="score-a">0</strong></p>
-        <p>Bonus: <strong id="bonus-a">0</strong></p>
         <div class="controls" style="margin-top: 10px">
           <button class="question-btn" onclick="addScore('a')">+1 Score</button>
-          <button class="question-btn" onclick="addBonus('a')">+1 Bonus</button>
         </div>
       </div>
 
@@ -92,10 +90,8 @@
       <div class="question-box" style="max-width: 300px">
         <h2>Group B</h2>
         <p>Score: <strong id="score-b">0</strong></p>
-        <p>Bonus: <strong id="bonus-b">0</strong></p>
         <div class="controls" style="margin-top: 10px">
           <button class="question-btn" onclick="addScore('b')">+1 Score</button>
-          <button class="question-btn" onclick="addBonus('b')">+1 Bonus</button>
         </div>
       </div>
     </div>
@@ -122,17 +118,14 @@
     <!-- Script -->
     <script>
       let score = { a: 0, b: 0 };
-      let bonus = { a: 0, b: 0 };
       let gameOver = false;
 
       function updateDisplay() {
-        const totalA = score.a + bonus.a;
-        const totalB = score.b + bonus.b;
+        const totalA = score.a;
+        const totalB = score.b;
 
         document.getElementById("score-a").textContent = score.a;
-        document.getElementById("bonus-a").textContent = bonus.a;
         document.getElementById("score-b").textContent = score.b;
-        document.getElementById("bonus-b").textContent = bonus.b;
         document.getElementById("big-score-a").textContent = totalA;
         document.getElementById("big-score-b").textContent = totalB;
 
@@ -159,15 +152,8 @@
         updateDisplay();
       }
 
-      function addBonus(group) {
-        if (gameOver) return;
-        bonus[group] += 1;
-        updateDisplay();
-      }
-
       function resetAllScores() {
         score = { a: 0, b: 0 };
-        bonus = { a: 0, b: 0 };
         gameOver = false;
         document.getElementById("winner").textContent = "";
         updateDisplay();

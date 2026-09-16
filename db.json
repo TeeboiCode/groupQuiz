@@ -1,244 +1,364 @@
 {
-"questions": [
-{
-"id": 1,
-"question": "What is HTML and what is its primary purpose in web development?"
-},
-{
-"id": 2,
-"question": "What does the acronym HTML stand for?"
-},
-{
-"id": 3,
-"question": "What is the basic structure of an HTML document?"
-},
-{
-"id": 4,
-"question": "What is the purpose of the <!DOCTYPE html> declaration?"
-},
-{
-"id": 5,
-"question": "What is the difference between the <head> and <body> elements?"
-},
-{
-"id": 6,
-"question": "What are HTML elements?"
-},
-{
-"id": 7,
-"question": "What are HTML attributes?"
-},
-{
-"id": 8,
-"question": "What is the purpose of the title tag?"
-},
-{
-"id": 9,
-"question": "What tag is used to create a paragraph in HTML?"
-},
-{
-"id": 10,
-"question": "What are heading tags in HTML?"
-},
-{
-"id": 11,
-"question": "How do you create a hyperlink in HTML?"
-},
-{
-"id": 12,
-"question": "What attribute specifies the destination of a hyperlink?"
-},
-{
-"id": 13,
-"question": "How do you insert an image in HTML?"
-},
-{
-"id": 14,
-"question": "What is the purpose of the alt attribute in an image tag?"
-},
-{
-"id": 15,
-"question": "What is the difference between ordered and unordered lists?"
-},
-{
-"id": 16,
-"question": "Which tags are used to create a table in HTML?"
-},
-{
-"id": 17,
-"question": "What is the purpose of the form element?"
-},
-{
-"id": 18,
-"question": "Name three common input types used in HTML forms."
-},
-{
-"id": 19,
-"question": "What is semantic HTML?"
-},
-{
-"id": 20,
-"question": "Give three examples of semantic HTML elements."
-},
-{
-"id": 21,
-"question": "What is CSS and why is it used?"
-},
-{
-"id": 22,
-"question": "What does CSS stand for?"
-},
-{
-"id": 23,
-"question": "What are the three ways to apply CSS to an HTML document?"
-},
-{
-"id": 24,
-"question": "What is the difference between inline, internal, and external CSS?"
-},
-{
-"id": 25,
-"question": "How do you link an external CSS file to an HTML document?"
-},
-{
-"id": 26,
-"question": "What is a CSS selector?"
-},
-{
-"id": 27,
-"question": "What is the difference between an ID selector and a class selector?"
-},
-{
-"id": 28,
-"question": "How do you select all paragraph elements using CSS?"
-},
-{
-"id": 29,
-"question": "How do you change the text color of an element using CSS?"
-},
-{
-"id": 30,
-"question": "How do you change the background color of an element?"
-},
-{
-"id": 31,
-"question": "What property is used to change the font size?"
-},
-{
-"id": 32,
-"question": "What property is used to make text bold?"
-},
-{
-"id": 33,
-"question": "Explain the CSS box model."
-},
-{
-"id": 34,
-"question": "What is the difference between margin and padding?"
-},
-{
-"id": 35,
-"question": "What is the default position value in CSS?"
-},
-{
-"id": 36,
-"question": "What are the different values of the position property?"
-},
-{
-"id": 37,
-"question": "What is Flexbox in CSS?"
-},
-{
-"id": 38,
-"question": "What is CSS Grid?"
-},
-{
-"id": 39,
-"question": "What is the purpose of media queries?"
-},
-{
-"id": 40,
-"question": "How can you make a website responsive using CSS?"
-},
-{
-"id": 41,
-"question": "What is Bootstrap?"
-},
-{
-"id": 42,
-"question": "Who developed Bootstrap?"
-},
-{
-"id": 43,
-"question": "What are the advantages of using Bootstrap?"
-},
-{
-"id": 44,
-"question": "How do you include Bootstrap in a project?"
-},
-{
-"id": 45,
-"question": "What is the Bootstrap grid system?"
-},
-{
-"id": 46,
-"question": "How many columns are in the Bootstrap grid system?"
-},
-{
-"id": 47,
-"question": "What is the difference between container and container-fluid in Bootstrap?"
-},
-{
-"id": 48,
-"question": "What are Bootstrap utility classes?"
-},
-{
-"id": 49,
-"question": "What class is used to create a responsive row in Bootstrap?"
-},
-{
-"id": 50,
-"question": "How do you create equal-width columns in Bootstrap?"
-},
-{
-"id": 51,
-"question": "What Bootstrap class is used to create a button?"
-},
-{
-"id": 52,
-"question": "How do you create a primary button in Bootstrap?"
-},
-{
-"id": 53,
-"question": "What Bootstrap class makes an image responsive?"
-},
-{
-"id": 54,
-"question": "What is the purpose of the Bootstrap navbar component?"
-},
-{
-"id": 55,
-"question": "How do you create a Bootstrap card?"
-},
-{
-"id": 56,
-"question": "What Bootstrap class is used to create an alert message?"
-},
-{
-"id": 57,
-"question": "What is the purpose of Bootstrap's spacing utilities?"
-},
-{
-"id": 58,
-"question": "What does the class mt-3 mean in Bootstrap?"
-},
-{
-"id": 59,
-"question": "What does the class p-4 mean in Bootstrap?"
-},
-{
-"id": 60,
-"question": "How can Bootstrap help speed up web development?"
-}
-]
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is HTML and what is its primary purpose in web development?",
+      "answer": "HTML structures the content of web pages.",
+      "explanation": "It labels content such as headings, paragraphs, links, and images so browsers can interpret the document."
+    },
+    {
+      "id": 2,
+      "question": "What does the acronym HTML stand for?",
+      "answer": "HyperText Markup Language.",
+      "explanation": "Hypertext connects documents with links; markup describes the structure and meaning of content."
+    },
+    {
+      "id": 3,
+      "question": "What is the basic structure of an HTML document?",
+      "answer": "A doctype followed by an html element containing head and body.",
+      "explanation": "The head holds document metadata, while the body contains the page content. Example: <!DOCTYPE html><html><head><title>Quiz</title></head><body><p>Hello</p></body></html>."
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of the <!DOCTYPE html> declaration?",
+      "answer": "It tells the browser to use standards mode.",
+      "explanation": "<!DOCTYPE html> is a declaration, not a visible element. It prevents legacy quirks-mode rendering."
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between the <head> and <body> elements?",
+      "answer": "head contains metadata; body contains page content.",
+      "explanation": "The title, metadata, and stylesheet links belong in head. Headings, paragraphs, and other displayed content belong in body."
+    },
+    {
+      "id": 6,
+      "question": "What are HTML elements?",
+      "answer": "Elements are the building blocks of an HTML document.",
+      "explanation": "Most have an opening tag, content, and a closing tag, such as <p>Hello</p>. Void elements such as <img> do not have closing tags."
+    },
+    {
+      "id": 7,
+      "question": "What are HTML attributes?",
+      "answer": "Attributes provide additional information or settings for elements.",
+      "explanation": "They appear in the opening tag, for example href in <a href=\"about.html\">About</a>."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the title tag?",
+      "answer": "It gives the document a title.",
+      "explanation": "Browsers use <title> for the tab label, and bookmarks commonly use it as their default name. It does not create a heading in the page body."
+    },
+    {
+      "id": 9,
+      "question": "What tag is used to create a paragraph in HTML?",
+      "answer": "The <p> tag.",
+      "explanation": "A paragraph groups related text: <p>Welcome to the quiz.</p>."
+    },
+    {
+      "id": 10,
+      "question": "What are heading tags in HTML?",
+      "answer": "<h1> through <h6>.",
+      "explanation": "These represent six heading levels. Choose levels to express the document hierarchy, rather than just to change text size."
+    },
+    {
+      "id": 11,
+      "question": "How do you create a hyperlink in HTML?",
+      "answer": "Use an <a> element with an href attribute.",
+      "explanation": "For example, <a href=\"about.html\">About us</a> creates a link to another page."
+    },
+    {
+      "id": 12,
+      "question": "What attribute specifies the destination of a hyperlink?",
+      "answer": "The href attribute.",
+      "explanation": "On an anchor element, href provides the destination URL or a fragment such as #contact for a location in the same page."
+    },
+    {
+      "id": 13,
+      "question": "How do you insert an image in HTML?",
+      "answer": "Use the <img> element with src and alt attributes.",
+      "explanation": "For example, <img src=\"logo.png\" alt=\"Company name\">. src identifies the image resource and alt supplies a text alternative."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of the alt attribute in an image tag?",
+      "answer": "It supplies a text alternative for an image.",
+      "explanation": "Screen readers can announce it, and browsers can use it when an image cannot load. Purely decorative images should usually use alt=\"\"."
+    },
+    {
+      "id": 15,
+      "question": "What is the difference between ordered and unordered lists?",
+      "answer": "Ordered lists use <ol>; unordered lists use <ul>.",
+      "explanation": "Both contain <li> items. Use an ordered list when sequence matters and an unordered list when it does not."
+    },
+    {
+      "id": 16,
+      "question": "Which tags are used to create a table in HTML?",
+      "answer": "<table>, <tr>, <th>, and <td>.",
+      "explanation": "table wraps the table, tr defines a row, th defines a header cell, and td defines a data cell. thead and tbody can group rows."
+    },
+    {
+      "id": 17,
+      "question": "What is the purpose of the form element?",
+      "answer": "It groups controls for collecting and submitting user input.",
+      "explanation": "A form can contain inputs, labels, and buttons. Its action and method determine where and how a normal submission is sent."
+    },
+    {
+      "id": 18,
+      "question": "Name three common input types used in HTML forms.",
+      "answer": "text, email, and password.",
+      "explanation": "For example, <input type=\"email\"> requests an email address. Input types influence the control’s behavior and built-in validation."
+    },
+    {
+      "id": 19,
+      "question": "What is semantic HTML?",
+      "answer": "HTML that expresses the meaning of content.",
+      "explanation": "Using meaningful elements helps browsers, assistive technology, and developers understand a page’s structure."
+    },
+    {
+      "id": 20,
+      "question": "Give three examples of semantic HTML elements.",
+      "answer": "<header>, <nav>, and <article>.",
+      "explanation": "header represents introductory content, nav a navigation section, and article a self-contained composition."
+    },
+    {
+      "id": 21,
+      "question": "What is CSS and why is it used?",
+      "answer": "CSS controls the presentation and layout of web content.",
+      "explanation": "It lets you style colors, typography, spacing, and layout while keeping those rules separate from HTML structure."
+    },
+    {
+      "id": 22,
+      "question": "What does CSS stand for?",
+      "answer": "Cascading Style Sheets.",
+      "explanation": "The cascade is the process used to resolve competing style declarations for an element."
+    },
+    {
+      "id": 23,
+      "question": "What are the three ways to apply CSS to an HTML document?",
+      "answer": "Inline, internal, and external styles.",
+      "explanation": "Use a style attribute, a <style> element, or a linked .css file respectively."
+    },
+    {
+      "id": 24,
+      "question": "What is the difference between inline, internal, and external CSS?",
+      "answer": "Inline styles affect one element; internal styles live in the document; external styles live in a separate file.",
+      "explanation": "External stylesheets can be shared by multiple pages, making site-wide styling easier to maintain."
+    },
+    {
+      "id": 25,
+      "question": "How do you link an external CSS file to an HTML document?",
+      "answer": "Use <link rel=\"stylesheet\" href=\"style.css\"> in the head.",
+      "explanation": "The browser loads the referenced stylesheet and applies its matching rules to the document."
+    },
+    {
+      "id": 26,
+      "question": "What is a CSS selector?",
+      "answer": "A pattern that identifies which elements a style rule targets.",
+      "explanation": "For example, .notice selects elements whose class list includes notice."
+    },
+    {
+      "id": 27,
+      "question": "What is the difference between an ID selector and a class selector?",
+      "answer": "An ID selector uses #; a class selector uses a dot.",
+      "explanation": "#intro matches id=\"intro\", while .intro matches class=\"intro\". IDs should be unique within a document; classes can be reused. An ID selector has greater specificity than a class selector."
+    },
+    {
+      "id": 28,
+      "question": "How do you select all paragraph elements using CSS?",
+      "answer": "Use the p type selector.",
+      "explanation": "For example, p { color: navy; } applies to every paragraph matched by that rule."
+    },
+    {
+      "id": 29,
+      "question": "How do you change the text color of an element using CSS?",
+      "answer": "Use the color property.",
+      "explanation": "For example, p { color: blue; } makes paragraph text blue unless another applicable rule overrides it."
+    },
+    {
+      "id": 30,
+      "question": "How do you change the background color of an element?",
+      "answer": "Use background-color.",
+      "explanation": "For example, .card { background-color: white; } sets the element’s background color."
+    },
+    {
+      "id": 31,
+      "question": "What property is used to change the font size?",
+      "answer": "font-size.",
+      "explanation": "For example, p { font-size: 1.25rem; } sets text size relative to the root element’s font size."
+    },
+    {
+      "id": 32,
+      "question": "What property is used to make text bold?",
+      "answer": "font-weight.",
+      "explanation": "For example, strong { font-weight: bold; }. The numeric value 700 commonly corresponds to bold, subject to the font’s available weights."
+    },
+    {
+      "id": 33,
+      "question": "Explain the CSS box model.",
+      "answer": "Content, padding, border, and margin.",
+      "explanation": "Padding surrounds the content, the border surrounds the padding, and margin adds outer spacing. With box-sizing: border-box, declared width includes padding and border."
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between margin and padding?",
+      "answer": "Margin is outside the border; padding is inside it.",
+      "explanation": "Padding separates content from its border. Margin separates the element’s box from neighboring boxes; vertical margins can sometimes collapse."
+    },
+    {
+      "id": 35,
+      "question": "What is the default position value in CSS?",
+      "answer": "static.",
+      "explanation": "A statically positioned element follows normal layout, and top, right, bottom, and left do not offset it."
+    },
+    {
+      "id": 36,
+      "question": "What are the different values of the position property?",
+      "answer": "static, relative, absolute, fixed, and sticky.",
+      "explanation": "Relative preserves normal-flow space; absolute leaves normal flow; fixed commonly anchors to the viewport; sticky follows flow then sticks within its scrolling constraints."
+    },
+    {
+      "id": 37,
+      "question": "What is Flexbox in CSS?",
+      "answer": "A one-dimensional layout system.",
+      "explanation": "With display: flex, a container arranges children along a main axis and supports alignment, spacing, and wrapping."
+    },
+    {
+      "id": 38,
+      "question": "What is CSS Grid?",
+      "answer": "A two-dimensional layout system.",
+      "explanation": "With display: grid, a container places items in rows and columns, making coordinated page and component layouts easier."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of media queries?",
+      "answer": "They conditionally apply CSS based on media features.",
+      "explanation": "For example, @media (min-width: 768px) { ... } applies its rules when the viewport is at least 768 CSS pixels wide."
+    },
+    {
+      "id": 40,
+      "question": "How can you make a website responsive using CSS?",
+      "answer": "Use flexible layouts, responsive media, and media queries.",
+      "explanation": "Flexbox or Grid, relative sizing, and images constrained to their container help content adapt. A viewport meta tag also helps mobile browsers use the intended viewport width."
+    },
+    {
+      "id": 41,
+      "question": "What is Bootstrap?",
+      "answer": "A frontend toolkit for building responsive websites.",
+      "explanation": "Bootstrap supplies CSS layouts, utilities, and components, plus JavaScript for interactive components."
+    },
+    {
+      "id": 42,
+      "question": "Who developed Bootstrap?",
+      "answer": "Mark Otto and Jacob Thornton at Twitter.",
+      "explanation": "Bootstrap began as an internal Twitter project and was later released as an open-source toolkit."
+    },
+    {
+      "id": 43,
+      "question": "What are the advantages of using Bootstrap?",
+      "answer": "Reusable components, responsive layouts, and consistent styling.",
+      "explanation": "Using established patterns reduces repetitive styling work, although accessibility and customization still need attention."
+    },
+    {
+      "id": 44,
+      "question": "How do you include Bootstrap in a project?",
+      "answer": "Include its CSS and, when needed, its JavaScript.",
+      "explanation": "You can use a CDN, downloaded files, or a package manager. Interactive components may require the Bootstrap JavaScript bundle; use files from the same version."
+    },
+    {
+      "id": 45,
+      "question": "What is the Bootstrap grid system?",
+      "answer": "A responsive layout system built from containers, rows, and columns.",
+      "explanation": "In Bootstrap’s default grid, columns divide a row into portions of a 12-column layout and can change at breakpoints."
+    },
+    {
+      "id": 46,
+      "question": "How many columns are in the Bootstrap grid system?",
+      "answer": "12 columns by default.",
+      "explanation": "A .col-6 spans half the available 12-column row; two such columns fill it. The grid can be customized when compiling Bootstrap."
+    },
+    {
+      "id": 47,
+      "question": "What is the difference between container and container-fluid in Bootstrap?",
+      "answer": ".container uses responsive maximum widths; .container-fluid stays 100% wide.",
+      "explanation": "At larger breakpoints, a default container is capped to a set width. Both provide horizontal padding by default."
+    },
+    {
+      "id": 48,
+      "question": "What are Bootstrap utility classes?",
+      "answer": "Small classes that apply a focused styling rule.",
+      "explanation": "Examples include .d-flex for display, .text-center for text alignment, and .mt-3 for top margin."
+    },
+    {
+      "id": 49,
+      "question": "What class is used to create a responsive row in Bootstrap?",
+      "answer": ".row.",
+      "explanation": "Place column elements inside a .row, usually within a container. The row coordinates column wrapping and gutters."
+    },
+    {
+      "id": 50,
+      "question": "How do you create equal-width columns in Bootstrap?",
+      "answer": "Use .col on each sibling column.",
+      "explanation": "For example, two <div class=\"col\"> elements inside a .row share the available width equally when neither has a fixed column size."
+    },
+    {
+      "id": 51,
+      "question": "What Bootstrap class is used to create a button?",
+      "answer": ".btn.",
+      "explanation": "Combine the base button class with a variant such as .btn-primary to give it the intended visual treatment."
+    },
+    {
+      "id": 52,
+      "question": "How do you create a primary button in Bootstrap?",
+      "answer": "Use class=\"btn btn-primary\" on a button.",
+      "explanation": "For example, <button class=\"btn btn-primary\">Start</button>. btn supplies the base styling and btn-primary supplies the primary variant."
+    },
+    {
+      "id": 53,
+      "question": "What Bootstrap class makes an image responsive?",
+      "answer": ".img-fluid.",
+      "explanation": "In Bootstrap 5, this sets max-width: 100% and height: auto so an image can shrink with its parent while preserving its aspect ratio."
+    },
+    {
+      "id": 54,
+      "question": "What is the purpose of the Bootstrap navbar component?",
+      "answer": "It provides a responsive navigation header.",
+      "explanation": "A navbar can contain branding and links. Collapsible navigation requires suitable markup and Bootstrap’s Collapse JavaScript behavior."
+    },
+    {
+      "id": 55,
+      "question": "How do you create a Bootstrap card?",
+      "answer": "Wrap content in .card and use .card-body for its main content.",
+      "explanation": "For example, <div class=\"card\"><div class=\"card-body\">Hello</div></div>. Optional classes include .card-title and .card-text."
+    },
+    {
+      "id": 56,
+      "question": "What Bootstrap class is used to create an alert message?",
+      "answer": ".alert with a variant such as .alert-success.",
+      "explanation": "For example, <div class=\"alert alert-success\" role=\"alert\">Saved</div>. Do not rely on color alone to communicate the message."
+    },
+    {
+      "id": 57,
+      "question": "What is the purpose of Bootstrap's spacing utilities?",
+      "answer": "They quickly apply margin and padding.",
+      "explanation": "Their names describe spacing type, side, and size, such as mt-3 for top margin and p-4 for padding on every side."
+    },
+    {
+      "id": 58,
+      "question": "What does the class mt-3 mean in Bootstrap?",
+      "answer": "Top margin at spacing level 3.",
+      "explanation": "In Bootstrap 5’s default spacing scale, mt-3 applies margin-top: 1rem. Custom Sass settings can change that value."
+    },
+    {
+      "id": 59,
+      "question": "What does the class p-4 mean in Bootstrap?",
+      "answer": "Padding on all sides at spacing level 4.",
+      "explanation": "In Bootstrap 5’s default spacing scale, p-4 applies 1.5rem of padding to every side. Custom spacing settings can change the value."
+    },
+    {
+      "id": 60,
+      "question": "How can Bootstrap help speed up web development?",
+      "answer": "It provides ready-made layouts, utilities, and components.",
+      "explanation": "Developers can assemble common interface patterns quickly and customize them instead of writing every style and behavior from scratch."
+    }
+  ]
 }
