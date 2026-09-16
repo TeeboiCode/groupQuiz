@@ -3,45 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tta | Group Challenge</title>
-    <link rel="stylesheet" href="ttaStyle.css" />
-
+    <meta name="description" content="Create teams, pick challenges, reveal answers, and keep score in a lively group quiz game." />
+    <title>Group Challenge | Ready to Play?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Animate Style -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Nunito+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="ttaStyle.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="overlay"></div>
-      <div class="brand">
-        <img
-          class="animate__animated animate__fadeInDown"
-          src="assests/download.png"
-          alt=""
-        />
-      </div>
+    <div class="page-shell">
+      <header class="landing-nav">
+        <a class="brand" href="index.html" aria-label="Group Challenge home">
+          <img src="assests/download.png" alt="Tech Talent Academy" />
+          <span>Group Challenge</span>
+        </a>
+        <div class="nav-status"><span class="status-dot" aria-hidden="true"></span>Ready for your class</div>
+      </header>
 
-      <h1 class="heading animate__animated animate__flipInX">
-        Group Challenge <br />
-      </h1>
-      <div class="btn">
-        <button
-          id="startBtn"
-          onclick=" window.location.href = './groupQuiz.html'"
-        >
-          Start
-        </button>
-      </div>
+      <main class="hero">
+        <section class="hero-copy">
+          <div class="eyebrow"><span aria-hidden="true">⚡</span> Learn, compete, celebrate</div>
+          <h1>Turn every question into a <span>team challenge.</span></h1>
+          <p class="hero-description">
+            Create your groups, choose a challenge, race the clock, and reveal the answer together. Every correct answer brings a team closer to the trophy.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-cta" href="groupQuiz.html">Set up the game <span aria-hidden="true">→</span></a>
+            <span class="cta-note">2–5 groups · Host controlled</span>
+          </div>
+          <ul class="feature-list" aria-label="Game features">
+            <li><span aria-hidden="true">👥</span><strong>Custom teams</strong></li>
+            <li><span aria-hidden="true">⏱️</span><strong>Quiz timer</strong></li>
+            <li><span aria-hidden="true">🏆</span><strong>Live scoring</strong></li>
+          </ul>
+        </section>
+
+        <section class="game-preview" aria-label="Group Challenge game preview">
+          <div class="decorative-shape shape-one" aria-hidden="true"></div>
+          <div class="decorative-shape shape-two" aria-hidden="true"></div>
+          <div class="preview-card">
+            <div class="preview-topbar">
+              <div><span class="preview-label">Live challenge</span><strong>Pick a number</strong></div>
+              <div class="timer-pill"><span aria-hidden="true">⏱</span> 00:45</div>
+            </div>
+            <div class="team-row">
+              <div class="team-pill team-blue"><span>Code Stars</span><strong>8</strong></div>
+              <div class="team-pill team-green active-team"><span>Pixel Crew</span><strong>9</strong><small>Playing</small></div>
+              <div class="team-pill team-orange"><span>Web Wizards</span><strong>6</strong></div>
+            </div>
+            <div class="challenge-grid" aria-hidden="true">
+              <span>1</span><span>2</span><span class="claimed blue">3</span><span>4</span>
+              <span class="claimed orange">5</span><span>6</span><span>7</span><span class="selected">8</span>
+              <span>9</span><span class="claimed green">10</span><span>11</span><span>12</span>
+              <span>13</span><span>14</span><span class="claimed blue">15</span><span>16</span>
+            </div>
+            <div class="preview-footer"><span><b>16</b> challenges</span><span>First to <b>10</b></span></div>
+          </div>
+          <div class="floating-card answer-float" aria-hidden="true">
+            <span class="float-icon">✓</span><div><strong>Correct!</strong><small>+1 point</small></div>
+          </div>
+          <div class="floating-card trophy-float" aria-hidden="true">🏆</div>
+          <div class="question-float question-one" aria-hidden="true">?</div>
+          <div class="question-float question-two" aria-hidden="true">?</div>
+        </section>
+      </main>
+
+      <footer class="landing-footer">
+        <span>Built for collaborative learning</span><span class="footer-divider" aria-hidden="true"></span><span>Tech Talent Academy</span>
+      </footer>
     </div>
-
-    <script></script>
   </body>
 </html>
